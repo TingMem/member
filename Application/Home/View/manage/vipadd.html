@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<script>
+$(document).ready(function(e) {
+	
+	$('.clear').click(function(){
+		$("#sid").val("");
+		$(".manage_reg").removeAttr("disabled").css("background",'#09F');	
+	});
+	
+	$("#form1").submit(function(){
+		if($("#start").val()>$("#end").val()){
+			alert('起始数必须要比结束数大！');
+			return false;	
+		}
+	})
+});
+
+</script>
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+	
+}
+table tr td { padding:0 15px;}
+textarea { width:500px; margin:30px 0; padding:8px;}
+.font12 {
+	font-size: 12px;
+	color: #F00;
+}
+.c {background:#ccc;}
+.green {
+	color: #090;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+<br />
+<br />
+<form id="form1" name="form1" method="post" action="/index.php/home/vip/vipaddcode">
+  <table class="table-bordered" width="1000" style="background:#ccc;" border="0" align="center" cellpadding="0" cellspacing="1">
+    <tr>
+      <td height="50" colspan="2" align="center" bgcolor="#FFFFFF" class="font12">注意：当前已添加{$arr.c}张卡，您如果要继续添加会员卡，起始卡号必须为：{$arr.maxsid}</td>
+    </tr>
+    <tr>
+      <td width="200" height="50" align="center" valign="top" bgcolor="#FFFFFF"><p>&nbsp;</p>
+      <p>会员卡号：</p>
+      <p class="font12">注：<span class="green">如果一次性添加很多会员卡，可能需要的时间比较久一点，所以请不要一次添加太多。</span></p></td>
+      <td bgcolor="#FFFFFF">
+      <p>
+      起始卡号：519777
+        <input name="start"  type="text" id="start" value="{$arr.maxsid|substr='6,8'}" size="10" />
+      </p>
+      <p>
+      结束卡号：519777
+        <input name="end" type="text" id="end" value="{$arr['maxsid']+1000|substr='6,8'}" size="10" />
+      </p></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" bgcolor="#FFFFFF"><p>&nbsp;</p>
+        <p>
+        
+          <input class="manage_reg btn btn-primary" type="submit" name="manage_reg" id="manage_reg" value="立即新增" />
+          &nbsp; 
+          &nbsp; 
+          &nbsp; 
+          &nbsp; 
+           <input class="clear btn btn-primary" type="button" name="clear" id="clear" value="清空填写" />
+        </p>
+        <p>&nbsp;</p></td>
+    </tr>
+  </table>
+</form>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

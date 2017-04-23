@@ -1,0 +1,57 @@
+<extend name="html:inc_list" />
+	<block name="search">{$tb['mark']}</block>
+	<block name="content">
+
+	<!-- 下拉加载 -->
+	<script type="text/javascript">
+jQuery(document).ready(function($) {
+	
+	layui.use('flow', function(){
+	  var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
+	  var flow = layui.flow;
+	  var tid = $(".typeid").eq(0).val();
+	  var page = 1;
+	  flow.load({
+	    elem: '#list-box' //指定列表容器
+	    ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
+	      var lis = [];
+	      
+	      //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
+	      $.getJSON("{:U('StoreTypeList/PageSplit')}?typeid="+tid+"&page="+page, function(res){
+	        //假设你的列表返回在data集合中
+
+	        layui.each(res.data, function(index, item){
+	        	
+	        	var imgs = new Array();
+	        	var str = item.picsimg;
+	        	imgs = str.split(",");
+	          lis.push('<div class="row shoplist" style="margin: 0px; margin-bottom: 5px; padding: 10px;"><div class="col-xs-4"><a href="{:U('StoreShopIndex/ShopArticle',array('id'=>'+item.id+'))}"><img class="shoplistimg" src="'+imgs[0]+'"/></a></div><div class="col-xs-8" style="padding: 3px 30px;"><h4 style="margin: 0px; font-weight: bold;"><a href="{:U("StoreShopIndex/ShopArticle",array("id"=>'+item.id+'))}">'+item.shopname+'</a></h4><p><a href="{:U("StoreShopIndex/ShopArticle",array("id"=>'+item.id+'))}">'+item.business_about+'</a></p></div></div>');
+	        }); 
+	        
+	        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+	        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+	        next(lis.join(''), page < res.pages);    
+	      });
+	    }
+	  });
+	});
+});
+	</script>
+	<!-- 下拉加载 End -->
+
+		<div class="row shoplist" style="margin: 0px; margin-bottom: 0px; padding: 10px;">
+			当前位置  
+		</div>
+		<div id="list-box">
+			<volist name='shoplist' id='slt' empty="$emp">
+				<input type="hidden" name="typeid" class="typeid" value="{$slt.typeid}">
+				<div class="row shoplist" style="margin: 0px; margin-bottom: 5px; padding: 10px;">
+					<div class="col-xs-4"><a href="{:U('StoreShopIndex/ShopArticle',array('id'=>$slt['id']))}"><img class="shoplistimg" src="<php>$arr = explode(',',$slt['picsimg']);echo $arr[0];</php>"/></a></div>
+					<div class="col-xs-8" style="padding: 3px 30px;">
+						<h4 style="margin: 0px; font-weight: bold;"><a href="{:U('StoreShopIndex/ShopArticle',array('id'=>$slt['id']))}">{$slt['shopname']}</a></h4>
+						<p><a href="{:U('StoreShopIndex/ShopArticle',array('id'=>$slt['id']))}">{:substr($slt['business_about'],0,90)}</a></p>
+					</div>
+				</div>
+			</volist>
+		</div>
+	</block>

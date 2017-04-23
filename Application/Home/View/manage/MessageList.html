@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+
+<load type="js" file="__PUBLIC__/Js/select.js" />
+
+
+
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">留言回复</h4>
+      </div>
+      <div class="modal-body">
+      	<input name="msgid" id="msgid" type="hidden" value="" />
+		 <textarea id="msgcont" name="msgcont" class="form-control" rows="5"></textarea>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" id="huifusub" class="btn btn-primary">提交回复</button>
+        <button type="button" id="modalclose" class="btn btn-default" data-dismiss="modal">关闭</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+	$(document).ready(function(e) {
+        $(".showmsg").click(function(){
+			$("#myModalLabel").html("留言回复："+$(this).attr("rel"));
+			$("#msgid").val($(this).attr("msgid"));	
+		});
+		
+		$("#huifusub").click(function(){
+			var cont = $("#msgcont").val();
+			var msgid = $("#msgid").val();
+			$.ajax({
+				type:'POST',
+				url:"/index.php/home/manage/retmsg",
+				data:{cont:cont,id:msgid},
+				success: function(result){
+					if(result==1){
+						alert('回复成功');
+						$("#modalclose").click();
+						window.location.reload();//刷新当前页面.
+					}else{
+						alert('回复失败！');	
+					}
+				},
+			});
+		});
+    });
+</script>
+
+<div>
+
+  <ul style="margin:0px;">
+    <form id="form1" name="form1" method="post" action="">
+      <ul>
+        <table width="100%" border="0" class="table-bordered" cellspacing="1" cellpadding="0">
+          <tr>
+            <td width="30" height="35" align="center" bgcolor="#fafafa">
+              <input type="checkbox" name="all" id="all" />
+              <label for="all"></label>
+            </td>
+            <td width="120" height="35" align="center" bgcolor="#EFEFEF">留言用户</td>
+            <td width="250" align="center" bgcolor="#EFEFEF">备注</td>
+            <td width="80" align="center" bgcolor="#EFEFEF">发布日期</td>
+            <td align="center" bgcolor="#EFEFEF">简介</td>
+            <td width="30%" align="center" bgcolor="#EFEFEF">管理员回复</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">操作</td>
+          </tr>
+          <volist name='lists' id='lists'>
+            <tr>
+              <td width="30" height="35" align="center" bgcolor="#FFFFFF"><input type="checkbox" value="{$lists.id}" class="select" name="select[]" id="select[]" /></td>
+              <td width="120" height="35" align="center" bgcolor="#FFFFFF">{$lists.author}</td>
+              <td width="250" align="center" bgcolor="#FFFFFF">{$lists.title}</td>
+              <td width="80" align="center" bgcolor="#FFFFFF">{$lists.mtime|date='Y-m-d',###}</td>
+              <td align="center" bgcolor="#FFFFFF">{$lists.body|strip_tags|mb_substr=0,500,'utf-8'}</td>
+              <td align="center" bgcolor="#FFFFFF">
+              	<volist name='result' id='resultmsg' empty='未回复'>
+                	<if condition="$resultmsg['msgid'] eq $lists['id']">
+                    	{$resultmsg.retcont} <br />
+                    </if>
+                </volist>
+              </td>
+              <td align="center" bgcolor="#FFFFFF"><a data-toggle="modal" msgid="{$lists.id}" class="showmsg" rel="{$lists.title}" data-target="#myModal" style=" cursor:pointer;">回复</a> | <a href="/index.php/home/manage/Message_Edit/id/{$lists.id}/tid/{:I('get.tid')}/thisid/{:I('get.thisid')}">查看</a></td>
+            </tr>
+          </volist>
+        </table>
+        <if condition="$_SESSION['level'] eq 10">
+        <div class="pagelist" style="text-align:center;">
+          <input name="tijiao" class="Message_del" value="删除选中" type="submit" /> - 
+        <span class="fonts">( <span class="fonts">删除后不可恢复</span> )</span></div>
+       </if>
+      </ul>
+    </form>
+    
+    <div class="pagelists" style="text-align:center;">{$page}</div>
+  </ul>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

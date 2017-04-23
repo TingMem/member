@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 新消息</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<script>
+	$(document).ready(function() {
+        if($("#all").val()==1){
+			$(".msg").removeClass("active");
+			$(".msg").eq(0).addClass("active");
+		}else if($("#all").val()==0){
+			$(".msg").removeClass("active");
+			$(".msg").eq(2).addClass("active");
+		}else if($("#all").val()==-1){
+			$(".msg").removeClass("active");
+			$(".msg").eq(1).addClass("active");
+		}
+    });
+</script>
+<style>
+.msg {cursor:pointer; height:30px; line-height:30px; text-align:center; width:33%; float:left;}
+.active { color:#fff; background:#ccc;}
+</style>
+</head>
+
+<body style="background:rgb(238,238,238)">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/index"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div class="fontsize fontcolor" style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">新消息查看</div>
+</div>
+
+    <div style="background:#999; height:30px; margin-top:2px;">
+        <ul>
+        	<input name="all" type="hidden" id="all" value="{$all}" />
+        	<a href="/index.php/home/index/message_list"><li class="msg active">全部消息</li></a>
+            <a href="/index.php/home/index/message_list/mymsg/1"><li class="msg">我的消息</li></a>
+            <a href="/index.php/home/index/message_list/system/1"><li class="msg">系统消息</li></a>
+        </ul>
+    </div>
+    <div style="clear:both;"></div>
+	<div class="main">
+
+    <volist name='messageData' id='lists' empty='暂无消息'>
+    	<div class="news_list">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="40">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding: 2% 5%">
+                            <h1><a href="/index.php/home/index/message_art/id/{$lists.id}">{$lists.title}</a>
+                            <if condition="$lists.look eq 1"><font style="color:red">[新]</font></if>
+                            </h1>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="news_about"><a style="font-size:14px;" href="/index.php/home/index/message_art/id/{$lists.id}">{$lists.body|strip_tags|mb_substr=0,30,'utf-8'}</a></div>
+
+                    	<div style="padding:5px; background:#999; margin:0 10px;">管理员回复：</div>
+                        <div style=" margin:10px 20px;">
+                        <volist name="retmsgData" id="vb" empty='管理员尚未回复'>
+                                 
+                        <if condition="$vb['msgid'] eq $lists['id']">
+                        <!--huifu  start -->
+                        {$vb.retadmin}回复：<a style="font-size:14px; color:#666;" href="/index.php/home/index/message_art/id/{$lists.id}">{$vb.retcont|strip_tags|mb_substr=0,20,'utf-8'}</a>
+                        <!--huifu  end   --> 
+                        </if>
+                        
+                        </volist>  
+                        </div>
+                </td>
+              </tr>
+            </table>
+	  </div>
+      </volist>
+</div>
+    
+<div style="clear:both;"></div>
+</body>
+</html>

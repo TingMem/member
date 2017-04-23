@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 惠民卡系统 - 规格添加</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $(".attradds").delegate(".iptremove","click",function(){
+      //alert('success');
+      $(".newattr").last().remove();
+    });
+
+    $("#addinput").bind({"click":function(){
+      var n = $(".attradds :input").length;
+      $(".attradds").append('<div class="form-group newattr"><label for="attrval1" class="col-sm-2 control-label">规格选项'+n+'</label><div class="col-sm-3"><input name="attr_value[]" class="form-control ipt" type="text" /></div><span style="cursor:pointer" class="glyphicon glyphicon-remove iptremove"></span></div>');
+      }
+    })
+
+    $("#submit").click(function(){
+      for(var i=0; i<=$("input").length;i++){
+        if($("input").eq(i).val()==''){
+          alert('您还有信息没有填写');
+          $("input").eq(i).focus();
+          return false;
+        }
+      }
+
+      if($("#text_type").val()==''){
+        alert('请选择显示形式');
+        $("#text_type").focus();
+        return false;
+      }else if($("#typeid").val()==''){
+        alert('请选择父级分类');
+        $("#typeid").focus();
+        return false;
+      }
+    })
+  });
+</script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="background-color: #fff; ">
+
+
+
+<div style="margin:0px 2%;">
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <form class="form-horizontal" role="form" id="form1" name="form1" method="post" action="{:U('StoreSpec/SpecEdit')}">
+          <div class="form-group">
+            <label for="spec_name" class="col-sm-2 control-label">规格名</label>
+            <div class="col-sm-3">
+              <input value="{$spec.spec_name}" name="spec_name" class="form-control" id="spec_name" type="text" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="spec_price" class="col-sm-2 control-label">价格</label>
+            <div class="col-sm-1">
+              <input name="spec_price" value="{$spec.spec_price}" class="form-control" id="spec_price" type="text" />
+            </div>
+            <div class="col-sm-2">元</div>
+          </div>
+
+          <div class="form-group">
+             <label for="attr" class="col-sm-2 control-label">所属分类</label>
+            <div class="col-sm-2">
+              <select name="typeid" id="typeid" class="form-control">
+              <volist name="tm" id="tm">
+              <option <if condition="$spec['typeid'] eq $tm['id']">selected</if> value="{$tm.id}">{$tm.typename}</option>
+              </volist>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+             <label for="spec" class="col-sm-2 control-label">启用</label>
+             <input type="hidden" name="id" value="{$spec.id}">
+            <div class="col-sm-2">
+              <select name="status" id="status" class="form-control">
+              <option <if condition='$spec.status eq 1'>selected</if> value="1">是</option>
+                <option <if condition='$spec.status eq 0'>selected</if>  value="0">否</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+               <button type="submit" id="submit" class="btn btn-primary">保 存</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

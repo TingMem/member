@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网惠民卡 - 商家订单管理列表</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<script>
+	$(document).ready(function(e) {
+        $(".goNum").keyup(function(){
+			if(parseInt($(".goNum").val())>parseInt($(".goNum").attr("rel"))){
+				$(".goNum").val($(".goNum").attr("rel"));
+				//$(".goNum").val('');
+			}
+			$(".me").text($(".goNum").val()*$(".me").attr("rel"));
+		});
+    });
+</script>
+</head>
+
+<body>
+<volist id="lists" name="lists">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/User/spadmin_list"><img height="90rem" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:4rem; font-weight:bold;">{$lists.usercname}</div>
+</div>
+<div class="sp_bg"><img width="100%" src="{$lists.url}"  /></div>
+<ul class="spart">
+	<li>
+<table  width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="12%"><img width="90%" src="__PUBLIC__/images/date.png" /></td>
+    <td><span>{$lists.runtime}</span></td>
+  </tr>
+</table>
+
+    </li>
+    <li>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="12%"><img width="90%" src="__PUBLIC__/images/max.png" /></td>
+    <td><span>{$lists.shopaddress}</span></td>
+    <td width="5%">&nbsp;</td>
+  </tr>
+</table>
+    </li>
+    <li>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="12%"><img src="__PUBLIC__/images/about.png" alt="" width="90%" /></td>
+    <td><span>查看简介</span></td>
+    <td width="5%"><img style="width:2.5rem" src="__PUBLIC__/images/right.png" /></td>
+  </tr>
+</table>
+    </li>
+    <li>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="3%"><div style="height:6rem; border-left:1rem #FF6600 solid"></div></td>
+    <td><span>{$lists.sjtype}</span></td>
+  </tr>
+</table>
+    </li>
+    <li style="border:0px;">
+<form action="/index.php/home/User/spadmin_artsave" id="myfrom" name="myform" method="post">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="35%"><span style="font-size:3rem;">{$lists.product}</span></td>
+      <td width="35%"><label for="textfield"></label>
+        <input name="goNum" rel="{$lists.maxnum}" placeholder="限购{$lists.maxnum}{$lists.danwei}" att="{$lists.danwei}" class="goNum" id="goNum" type="text" />
+         <input name="maxN" type="hidden" value="{$lists.maxnum}" />
+         <input name="pid" type="hidden" value="{$lists.id}" /> 
+        </td>
+      <td width="10%"><img   src="__PUBLIC__/images/split.png" alt=""  /></td>
+      <td style="font-size:4rem; color:#FC0;">￥<span rel="{$lists.price}" class="me">{$lists.price}</span></td>
+    </tr>
+  </table>
+
+</form>
+    </li>
+</ul>
+</volist>
+ <div class="shop_btndiv">
+<img src="__PUBLIC__/images/shop_btn.png" alt="购买"  />
+</div>
+<div style="clear:both;"></div>
+</body>
+</html>

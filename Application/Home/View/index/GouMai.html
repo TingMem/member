@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 绑定惠民卡</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<style>
+	#tables tr td { font-size:14px; color:#333; padding:5px 10px; height:30px;}
+</style>
+<script>
+	$("document").ready(function(e) {
+        $(".SSS").click(function(){
+			$("#form1").submit();	
+		})
+    });
+</script>
+</head>
+
+<body style="background:#fff">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/UserSet"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div class="fontsize fontcolor" style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">惠民卡须知</div>
+    </div>
+    <form id="form1" name="form1" method="post" action="/index.php/home/test/paytest"><div class="news_add" style="font-size: 14px; color: #FFF">
+<table id="tables" style="background: #ccc; font-size: 14px; color: #333;" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td colspan="2" style="14px; color:red;" align="center" bgcolor="#FFFFFF">温馨提示：仅限身份证籍贯为钦州地区市民购买，凭户口本或结婚证或学生证购买者，请在各实体发售点购买，否则将不可正常使用卡片。</td>
+    </tr>
+  <tr>
+    <td align="right" valign="middle" bgcolor="#FFFFFF">订单编号：</td>
+    <td valign="middle" bgcolor="#FFFFFF">{$sid}
+      <input name="sid" type="hidden" id="sid" value="{$sid}" /></td>
+  </tr>
+  <volist id='arr' name='arr'>
+  <tr>
+    <td width="40%" align="right" valign="middle" bgcolor="#FFFFFF">绑定帐号：</td>
+    <td valign="middle" bgcolor="#FFFFFF">{$arr.username}
+      <input name="username" type="hidden" id="username" value="{$arr.username}" /></td>
+  </tr>
+  <tr>
+    <td width="40%" align="right" valign="middle" bgcolor="#FFFFFF">绑定姓名：</td>
+    <td valign="middle" bgcolor="#FFFFFF">{$arr.usercname}
+      <input name="usercname" type="hidden" id="usercname" value="{$arr.usercname}" /></td>
+  </tr>
+  <tr>
+    <td width="40%" align="right" valign="middle" bgcolor="#FFFFFF">绑定手机：</td>
+    <td valign="middle" bgcolor="#FFFFFF">{$arr.tel}
+      <input name="tel" type="hidden" id="tel" value="{$arr.tel}" /></td>
+  </tr>
+  <tr>
+    <td width="40%" align="right" valign="middle" bgcolor="#FFFFFF">惠民卡价格：</td>
+    <td valign="middle" bgcolor="#FFFFFF">￥36 元
+      <input name="price" type="hidden" id="price" value="36" /></td>
+  </tr>
+  </volist>
+  <tr>
+    <td colspan="2" align="center" valign="middle" bgcolor="#FFFFFF"></td>
+    </tr>
+</table>
+
+</div>
+<div class='SSS' style="font-size:16px; color:#fff; background:#09C; display:block; padding:5px 10px; width:90%; margin:0 auto; height:40px; line-height:40px;  text-align:center;">确认购买</div>
+    </form>
+</div>
+
+
+    
+
+</body>
+</html>

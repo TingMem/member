@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网惠民卡 - 商家订单管理列表</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+</head>
+
+<body>
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/shopadmin"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">订单列表</div>
+
+</div>
+<div class="new_message">您有{$count|default='0'}条订单待处理</div>
+<div class="user_main">
+	<volist name='lists' id='lists'>
+	<table width="100%" style="background:#ccc;" border="0" align="center" cellpadding="0" cellspacing="1">
+      <tr >
+        <td  style="height:40px" bgcolor="#FFFFFF">
+        <div  style="margin-right:1%; width:45%; float:right; min-height:30px; line-height:30px;font-size:14px;">时间：{$lists.logtime|date='Y-m-d',###}</div>
+        <div style="margin-left:1%;  width:50%; float:left;min-height:30px; font-size:14px;">订单：{$lists.shopname}{$lists.num}{$lists.danwei}</div></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td  style="float:left;min-height:40px; font-size:14px;">单号：{$lists.sid}</td>
+          </tr>
+          <tr>
+            <td style="float:left;min-height:40px; font-size:14px;">单价：<span style="font-size:14px;  color: #F90">￥{$lists.price}</span></td>
+          </tr>
+          <tr>
+            <td  style="float:left;min-height:40px; font-size:14px;">总金额：<span style="font-size:14px;  color: #F90">￥{$lists.cprice}</span></td>
+          </tr>
+          <tr>
+            <td style="min-height:30px; font-size:14px;"><div style="width:100px; font-size:14px; float:left;height:30px">付款：{$lists.pay}</div>&nbsp;&nbsp;&nbsp;<if condition='($lists.paystatus eq 1)'><div style="text-align:center; color:#fff; background:#F93; height:40px; line-height:40px; width:80px; float:left; font-size:14px;">已付款</div><else /><div style="text-align:center;width:80px; font-size:14px; color:#fff; background:red; height:40px;float:left;  line-height:40px;">未付款</div></if></td>
+          </tr>
+          <tr>
+            <td style="font-size:14px; height:40px;">
+            <if condition='$lists.status eq 0'><div  style="margin-right:1%; width:80px; float:right; height:40px; line-height:40px; border-radius:3px;font-size:14px;  background:red;text-align:center; color:#fff; ">待处理</div><else /><div  style="margin-right:1%; width:80px; float:right; height:40px; line-height:40px; border-radius:3px;font-size:14px;  background: #060;text-align:center; color:#fff;">已处理</div></if>
+           <div style="margin-left:1%;  width:48%; float:left; height:40px; line-height:40px; font-size:14px;">用户：{$lists.username}</div></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td style="background:rgb(238,239,242)">
+        <if condition='($lists.tel neq null)'><a href="tel://{$lists.tel}"> </if><div class="fontsize" style="width:49%; float:right; height:40px; line-height:40px;text-align:center; color:#333;cursor:pointer; border-left:1px solid #ccc;">致电客户</div><if condition='($lists.tel neq null)'></a></if>
+      <if condition='($lists.status neq 1)'><a onclick="return confirm('标记后不可恢复，您确定要将该订单标志为已消费吗？')" href="/index.php/home/index/shopheyan/id/{$lists.aid}"></if><div class="fontsize<if condition='($lists.status neq 1)'> shopheyan</if>" rel="{$lists.aid}" style=" width:50%; float:left; height:40px; line-height:40px; text-align:center;color:#333; cursor:pointer ; font-size:18px;">订单核验</div><if condition='($lists.status neq 1)'></a></if>
+        
+        </td>
+      </tr>
+    </table>
+    <br />
+	</volist><br />
+
+    <div class="pagelist">{$page}</div>
+	<div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>
+</body>
+</html>

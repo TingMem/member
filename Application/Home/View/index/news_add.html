@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 发布优惠信息</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+</head>
+
+<body style="background:#fff">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/news_list"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">发布信息</div>
+
+</div>
+
+<div class="news_add">
+	<form  action="/index.php/home/index/news_add_save" method="post" enctype="multipart/form-data" name="form" id="form">
+        <table width="100%" border="0" style="background:#ccc;" cellspacing="1" cellpadding="0">
+          <tr>
+            <td  bgcolor="#FFFFFF"><div class="diy_padd fontsize2">标题：<input  class='fontsize' style="height:20px; padding:3px; width:70%; " name="title" id="title" type="text" /></div></td>
+          </tr>
+          <tr>
+            <td height="50" bgcolor="#FFFFFF"><div class="diy_padd fontsize">封面</div></td>
+          </tr>
+          <tr>
+            <td height="50" bgcolor="#FFFFFF">
+            <div  style="background:#E8E8E8; color:#666; font-size:18px;" class="diy_padd"><img id='upbtn' style="height:30px;" src="__PUBLIC__/images/shangjia/upload.png" /> <span style="font-size:14px;" class="Fmpic">上传(建议800px以下)</span></div>
+           <input type="file" class="uptext" style="display:none;"  name="photo1"></td>
+          </tr>
+          <tr>
+            <td height="50" bgcolor="#FFFFFF"><div class="diy_padd fontsize">内容</div></td>
+          </tr>
+          <tr>
+            <td height="50" bgcolor="#FFFFFF">
+            <div  style="background:#E8E8E8; color:#666; font-size:14px;" class="diy_padd"><img id='upbtn2' style="height:30px" src="__PUBLIC__/images/shangjia/up_pic.png" /> 插入图片</div>
+          
+            </td>
+          </tr>
+          <tr>
+            <td height="50" bgcolor="#FFFFFF"><label for="textarea"></label>
+            <textarea name="content" class="test" id="content" rows="12"></textarea>
+            <div class="show fontsize2">
+            	
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td height="50" bgcolor="#FFFFFF">
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="50%" style="background:rgb(51,181,229)">
+<div id="yulan" class="fontsize fontcolor" style="width:100%;background:rgb(51,181,229);height:40px; line-height:40px; text-align:center;cursor:pointer; float:left;">预览</div>
+            <div id="edit" class="fontsize fontcolor" style="width:100%;background:rgb(51,181,229);height:40px; line-height:40px; text-align:center;cursor:pointer; float:left">继续编辑</div>
+                </td>
+                <td style="background:rgb(255,153,0)"><div id="fabu" class="fontsize fontcolor" style="background:rgb(255,153,0); cursor:pointer; height:40px; line-height:40px; text-align:center; width:100%; float:right">发布</div></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table>
+  </form>
+
+	<div style="clear:both;"></div>
+</div>
+<form action="" method="post" enctype="multipart/form-data" name="uploadForm" id="uploadForm">
+	<input type="file" class="uptext2" style="display:none;"  name="photo2">
+</form>
+    
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+  <extend name="html:inc_product" />
+  <block name="content">
+  <script src="__PUBLIC__/fenxiang/nativeShare.js"></script>
+  <load type="js" file="__PUBLIC__/Js/toucher.js" />
+  <link rel="stylesheet" href="__PUBLIC__/fenxiang/nativeShare.css"/>
+  <script>   
+  //引入layui模块
+  layui.use(['layer', 'form'], function(){
+    var layer = layui.layer
+    ,form = layui.form();
+    
+  });
+
+
+</script> 
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+        //幻灯
+      var myTouch = util.toucher(document.getElementById('carousel-example-generic'));  
+      myTouch.on('swipeLeft',function(e){  
+          $('#carright').click();  
+      }).on('swipeRight',function(e){  
+          $('#carleft').click();  
+      }); 
+      $(".carousel-inner div").eq(0).addClass("active");
+      $(".carousel-indicators li").eq(0).addClass("active");
+
+//分享层
+
+      layui.use('layer',function(){
+        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+        $(".show").click(function(event) {
+          var url = window.location.href;
+          var config = {
+              url:url,// 分享的网页链接
+              title:'{$cp.product_name}',// 标题
+              desc:'我的天，竟然是！震惊！沉默了！',// 描述
+              img:'{$arrs}',// 图片
+              img_title:'{$cp.product_name}',// 图片标题
+              from:'钦州旅游惠民卡商城' // 来源
+          };
+
+    var share_obj = new nativeShare('nativeShare',config);
+          layer.open({
+            type: 1 //Page层类型
+            ,area: ['100%', '100%'] //遮罩宽高
+            ,title: '分享给好友'
+            ,shade: 0.6 //遮罩透明度
+            ,maxmin: false //允许全屏最小化
+            ,anim: 1 //0-6的动画形式，-1不开启
+            ,content: $('#nativeShare')
+            ,cancel:function(){
+              $("#nativeShare").hide();
+            }
+          });  
+        });
+      })
+      //幻灯
+      $(".carousel-inner div").eq(0).addClass("active");
+      $(".carousel-indicators li").eq(0).addClass("active");
+
+      $(".cont-box").eq(0).css("display",'block');
+      $("div.hov").click(function(){
+        $("div.hov").removeClass("tab-active");
+        $(this).addClass("tab-active");
+        $(".cont-box").css('display','none');
+        $("#"+$(this).attr('data-id')).css('display','block');
+      });
+
+      var form = layui.form();
+    })
+  </script>
+  	<div class="shop-article-tab">
+  		<table name='tab' width="100%" style="text-align: center;">
+  			<tr>
+  				<td><div style="height: 30px;"><h4 class="h4" style="font-weight: 600; text-align: left; padding: 0 0 0 10%;">{$cp.product_name}</h4></div></td>
+  			</tr>
+  		</table>
+  	</div>
+<div style="display: none" id="nativeShare"></div>
+  <!--cont-box2-->
+    <div class="cont-box" id="cont-box2">
+      <div class="row" style="margin: 0px ; padding: 20px; border-bottom: 1px solid #ccc;">
+        <volist name="attr" id="ar" key="i">
+          <div class="col-xs-6">
+            <span style="font-weight: bold;">{$ar.attr_name}</span>：{$attrv[$i-1]['attr_value']}
+          </div>
+        </volist>
+      </div>
+
+      <!-- 简介 -->
+    <div class="shop-article-tab" style="border-top: 0px;">
+      <table name='tab' width="100%" style="text-align: center;">
+        <tr>
+          <td><div style="height: 30px;"><h4 class="h4" style="font-weight: 600; text-align: left; padding: 0 0 0 10%;">商品详情</h4></div></td>
+        </tr>
+      </table>
+    </div>
+
+      <div style="margin: 20px; padding-left: 15px;">
+        {$cp.product_about|htmlspecialchars_decode}
+      </div>
+    </div>
+
+      <div style="margin: 0 5%; border-top: 1px solid #ccc; padding: 10px;">
+        <button type="button" name="fenxiang" class="layui-btn layui-btn-radius layui-btn-primary layui-btn-small show">分享</button>
+      </div>
+
+    <div class="row" style="margin: 0px;">
+      <table class="table table-bordered">
+        <tr>
+          <td style="width: 50%; text-align: center;">
+            <span style="color: rgb(255,51,0); font-size: 16px">￥</span><span data-tid='{$cp.id}' class="price" data-p="{$cp.price}" placeholder="{$cp.price}" style="color: rgb(255,51,0); font-size: 24px">{$cp.price}</span>
+            <span style="color: rgb(255,109,12); font-size: 14px">￥</span><span style="color: rgb(255,109,12); font-size: 16px"><del class="oprice" data-p="{$cp.product_oprice}" data-tid='{$cp.id}'>{$cp.product_oprice}</del></span>
+            <span style="color: rgb(255,109,12); font-size: 14px">门市价</span>
+          </td>
+          <td style="text-align: center;">
+          <a href="{:U('StoreProductOrder/ProductOrder',array('id'=>$cp['id'],'tid'=>$sae['typeid']))}">
+            <button type="submit" class='layui-btn layui-btn-warm layui-btn-radius layui-btn-big'>立即预订</button></a></td>
+        </tr>
+      </table>
+    </div>
+  </block>

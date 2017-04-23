@@ -1,0 +1,192 @@
+[ 2017-04-05T09:24:59+08:00 ] ::1 /zendWorkspace/member/Common
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Common
+
+[ 2017-04-05T14:15:40+08:00 ] ::1 /zendWorkspace/member/vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Vip
+
+[ 2017-04-05T15:27:02+08:00 ] ::1 /phpMyAdmin/sql.php?server=1&db=member&table=tp_user&pos=0&token=16e41c2ac327d9e9b088275c9125460c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:PhpMyAdmin
+
+[ 2017-04-05T15:27:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-05T15:28:28+08:00 ] ::1 /zendWorkspace/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:ZendWorkspace
+
+[ 2017-04-05T15:28:44+08:00 ] ::1 /data/appserv/members.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:28:44+08:00 ] ::1 /data/appserv/flag-english.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:28:44+08:00 ] ::1 /data/appserv/flag-thai.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:28:44+08:00 ] ::1 /data/appserv/PHP-logo.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:28:44+08:00 ] ::1 /data/appserv/softicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:28:46+08:00 ] ::1 /data/_LPHPMYADMIN/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:28:49+08:00 ] ::1 /data/phpinfo.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:12+08:00 ] ::1 /data/appserv/members.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:12+08:00 ] ::1 /data/appserv/flag-thai.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:12+08:00 ] ::1 /data/appserv/flag-english.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:12+08:00 ] ::1 /data/appserv/softicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:12+08:00 ] ::1 /data/appserv/PHP-logo.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:13+08:00 ] ::1 /data/appserv/members.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:13+08:00 ] ::1 /data/appserv/flag-thai.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:13+08:00 ] ::1 /data/appserv/softicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:13+08:00 ] ::1 /data/appserv/flag-english.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:13+08:00 ] ::1 /data/appserv/PHP-logo.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:18+08:00 ] ::1 /data/appserv/PHP-logo.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:18+08:00 ] ::1 /data/appserv/softicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:18+08:00 ] ::1 /data/appserv/flag-english.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:18+08:00 ] ::1 /data/appserv/members.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:29:18+08:00 ] ::1 /data/appserv/flag-thai.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Data
+
+[ 2017-04-05T15:49:31+08:00 ] ::1 /phpMyAdmin/sql.php?db=member&table=tp_type&server=1&target=&token=26a65561cf108756c9fe7b17af415b89&ajax_request=true&ajax_page_request=true&_nocache=1491378571485814702
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:PhpMyAdmin
+
+[ 2017-04-05T16:14:46+08:00 ] ::1 /index.php/index.php/home/manage/news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Index.php
+
+[ 2017-04-05T16:15:00+08:00 ] ::1 /index.php/index.php/home/manage/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Index.php
+
+[ 2017-04-05T16:15:11+08:00 ] ::1 /index.php/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Index
+
+[ 2017-04-05T17:17:36+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Favicon
+

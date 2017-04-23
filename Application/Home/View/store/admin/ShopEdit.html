@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 惠民卡系统 - 商家信息修改</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="css" file="__PUBLIC__/Css/fileinput.min.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+
+.col-md-2 { padding: 0px !important; }
+</style>
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <include file="manage/head" />
+<load type="css" file="__PUBLIC__/BootstrapValidator/css/bootstrapValidator.min.css" />
+<load type="js" file="__PUBLIC__/BootstrapValidator/js/bootstrapValidator.min.js" />
+<load type="js" file="__PUBLIC__/Js/fileinput.min.js" />
+<load type="js" file="__PUBLIC__/Js/fileinput_locale_zh.js" />
+<link href="__PUBLIC__/bootstrap-dialog/bootstrap-dialog.min.css" rel="stylesheet">
+<script src="__PUBLIC__/bootstrap-dialog/bootstrap-dialog.min.js"></script>
+
+        <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="background-color: #fff; ">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-md-9 column">
+            <form class="form-horizonta product-add" name="form1" data-type='ajax' id="form1" method="post" action="{:U('ShopEditAjax')}" role="form">
+              <div class="form-group">
+                 <label for="spname">商家名称</label><input placeholder="三娘湾景区" name="shopname" class="form-control" value="{$sa.shopname}" id="shopname" type="text" />
+                 <input name="aid" class="form-control" value="{$sa.id}" type="hidden" />
+              </div>
+              <div class="form-group">
+                <label for="title">分类信息</label>
+                <div class="form-inline">
+                  <select name="typeid" id="typeid" class="form-control">
+                    <volist name='tn' id='tn'>
+                    <option <if condition="$sa['typeid'] eq $tn['id']">selected</if> value="{$tn.id}">{$tn.typename}</option>
+                    </volist>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="form-group">
+                <label for="status">状态</label><div class="form-inline">
+                  <select name="status" id="status" class="form-control">
+                    <option <if condition='$sa["status"] eq 1'>selected</if> value="1">启用</option>
+                    <option <if condition='$sa["status"] eq 0'>selected</if> value="0">停用</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                 <label for="spname">商家地址</label><input placeholder="钦州市xxx街xx号" name="address" class="form-control" value="{$sa['address']}" id="address" type="text" />
+              </div>
+
+              <div class="form-group">
+                <label for="pics">商家图片(最大2M/张，最多5张)</label><input data-preview-file-type="text" multiple="multiple" id="pics" name="pics[]" type="file" />
+                <input type="hidden" name="picsimg" class="picsubmit" value="">
+              </div>
+              <div class="form-group"><label for="business_about">商家介绍</label><textarea style="min-height: 300px"  name="business_about" id="business_about">{$sa.business_about}</textarea>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="__PUBLIC__/bdUe/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="__PUBLIC__/bdUe/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript"> 
+    var editor = new UE.ui.Editor(); 
+    editor.render("business_about"); //1.2.4以后可以使用一下代码实例化编辑器 
+</script>
+              </div>
+              <div style="text-align: center;"><button type="button" name="submit" class="btn btn-primary btn-sub">保存信息</button></div>
+              
+
+            </form>
+          </div>
+        </div>
+      </div>
+  	</div>
+    <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+  </div>
+</body>
+<script type="text/javascript">
+  
+$(document).ready(function(){
+  var id = '{$sa["id"]}';
+    var str = '{$sa["picsimg"]}'.split(',');
+    if('{$sa["picsimg"]}'!=''){
+       var len = str.length;
+    }else{
+       var len = 0;
+    }
+   
+    $(".picsubmit").val('{$sa["picsimg"]}');
+    var imgs = [];
+    var imgconfig =[];
+    if(len>=1){
+      for(var i=0; i<len;i++){
+        var stri = str[i].replace(/\//g,"-");
+        imgs.push("<img  style='width:auto;height:160px;' src='" + str[i] + "' class='file-preview-image' alt='图片"+ i +"' title='图片"+ i +"'/>");
+        imgconfig.push({"url":'/index.php/Home/StoreShop/ShopPicDel/pathurl/'+stri+'/id/'+id+'/arrid/'+i,'key':i});
+      }
+    }else{
+      imgs.push("");
+    }
+
+    var upconfig = {
+      'showUpload':true,
+      'previewFileType':'any',
+      'maxFileCount':5,
+      'allowedPreviewTypes':['image','text'],
+      'uploadAsync':true,
+      'uploadUrl':'/index.php/Home/StoreProduct/ProductPicUpload',
+      'enctype': 'multipart/form-data',
+      'msgFilesTooMany':'抱歉，您最多可以上传5张图片',
+    }
+
+    if(imgs!=''){
+     upconfig.initialPreview = imgs;
+     upconfig.initialPreviewConfig = imgconfig;
+    }
+
+//Ajax图片上传 - bootstrap-inputfile
+  $("#pics").fileinput(upconfig).on("fileuploaded", function(event, outData) {
+    //文件上传成功后返回的数据
+    var result = outData.response.data;
+    // 对应的input 赋值
+    if($(".picsubmit").val()!=''){
+      $(".picsubmit").val($(".picsubmit").val()+","+result);
+    }else{
+      $(".picsubmit").val(result);
+    }
+});
+
+
+
+    //验证表单并以Ajax方式提交数据
+
+$(".btn-sub").click(function(){
+$('form').data('bootstrapValidator').validate(); 
+ var sub = $("#form1").data('bootstrapValidator').isValid();
+ if(sub){
+    var url = $('form').attr('action');
+    var data = $('form').serializeArray();
+    $.ajax({
+      type:'POST',
+      datatype:'json',
+      data:data,
+      url:url,
+      success:function(result){
+        if(result=='Success'){
+
+          BootstrapDialog.show({
+            title:'提示',
+            message:'恭喜，修改保存成功！',
+            buttons:[{
+              label:'知道了',
+              action:function(dialog){
+                dialog.close();
+              }
+            }]
+          })
+          $('.btn-sub').attr('disabled','disabled').html('已提交');
+        }
+      }
+    });
+ }
+});
+   
+
+      $('#form1').bootstrapValidator({
+
+　　　　　message: 'This value is not valid',
+          feedbackIcons: {
+              valid: 'glyphicon glyphicon-ok',
+              invalid: 'glyphicon glyphicon-remove',
+              validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+              shopname: {
+                validators: {
+                    notEmpty: {
+                        message: '请输入商家名称'
+                    }
+                }
+              },
+            typeid: {
+            validators: {
+                notEmpty: {
+                    message: '请选择分类信息'
+                }
+              }
+            },
+            }
+      }).on('error.field.bv', function(e, data) {
+          $('.btn-sub').attr('disabled','disabled');
+        
+      }).on('status.field.bv', function(e, data) {
+          $('.btn-sub').removeAttr('disabled').html('提交商家');
+      });
+
+})
+</script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+<div >
+
+  <ul style="margin:0px;">
+    <form id="form2" name="form2" method="post" action="">
+      <ul>
+        <table class="table-bordered" width="100%" border="0" style="background:#ccc;" cellspacing="1" cellpadding="0">
+          <tr>
+            <td width="50" height="35" align="center" bgcolor="#fafafa">
+              <input type="checkbox" name="all" id="all" />
+              <label for="all"></label>
+            </td>
+            <td width="150" align="center" bgcolor="#EFEFEF">发布人</td>
+            <td width="350" align="center" bgcolor="#EFEFEF">标题</td>
+            <td width="100" align="center" bgcolor="#EFEFEF">发布日期</td>
+            <td align="center" bgcolor="#EFEFEF">简介</td>
+            <td width="10%" align="center" bgcolor="#EFEFEF">操作</td>
+          </tr>
+          <volist name='lists' id='lists'>
+            <tr>
+              <td width="50" height="35" align="center" bgcolor="#FFFFFF"><input type="checkbox" value="{$lists.id}" class="select" name="select[]" id="select[]" /></td>
+              <td width="150" align="center" bgcolor="#FFFFFF">{$lists.sub_user}</td>
+              <td width="350" align="center" bgcolor="#FFFFFF">{$lists.title}</td>
+              <td width="100" align="center" bgcolor="#FFFFFF">{$lists.createtime|date='Y-m-d',###}</td>
+              <td align="center" bgcolor="#FFFFFF">{$lists.content|strip_tags|mb_substr=0,60,'utf-8'}</td>
+              <td align="center" bgcolor="#FFFFFF"><a href="/index.php/home/manage/help_edit/id/{$lists.id}">编辑</a></td>
+            </tr>
+          </volist>
+        </table>
+        <div class="pagelist">
+          <input name="tijiao" class="help_del btn btn-primary" value="删除选中" type="submit" /> - 
+          <input class="btn btn-primary" name="tijiao2" onclick="location.href='/index.php/home/manage/help_add'" value="添加指南" type="button" />
+        <span class="fonts">（<span class="fonts">添加帮助指南</span>)</span></div>
+      </ul>
+    </form>
+    <div class="pagelists">{$page}</div>
+  </ul>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

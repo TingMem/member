@@ -1,0 +1,2595 @@
+[ 2016-11-08T10:57:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:58:24+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:58:25+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:58:54+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:58:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:58:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:58:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:58:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:58:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:58:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:58:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:58:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:59:28+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:59:28+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:59:29+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:00:28+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:00:55+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:00:56+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:01:03+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-11-08T11:01:09+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-11-08T11:02:10+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-11-08T11:02:15+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:02:28+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:02:29+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:02:33+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2016-11-08T11:03:03+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_store_product_type` (`shopname`,`typeid`,`status`,`picsimg`,`business_about`) VALUES ('test','0','1','/Uploads/20161108/110228_da75bc35564f96c865cb60bba9778e4a.png,/Uploads/20161108/110229_8e59df2b6b85941683915c97af1778af.png','&lt;p&gt;test&lt;br/&gt;&lt;/p&gt;') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:03:13+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:03:20+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopDel/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:ShopDel
+
+[ 2016-11-08T11:03:24+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:03:49+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:03:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_store_product_type` (`shopname`,`typeid`,`status`,`picsimg`,`business_about`) VALUES ('nnn','0','1','/Uploads/20161108/110349_1e66f9de6ea4e66e8df3329a14586d1b.png','&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:03:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:07:24+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:07:28+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:07:46+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:07:47+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:07:50+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAddAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopAddAjax' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `tp_store_product_type` (`shopname`,`typeid`,`status`,`address`,`picsimg`,`business_about`) VALUES ('bb','1','1','bbb','/Uploads/20161108/110746_5f120a97c195cf6a58f7cc0a24f006e9.png,/Uploads/20161108/110747_0f43005f4f132719b3dac68b8cff5141.png','&lt;p&gt;bbb&lt;br/&gt;&lt;/p&gt;') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:07:57+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:15:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:17:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:17:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:17:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:17:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:17:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:17:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:18:59+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:19:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:19:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:19:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:19:01+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:19:12+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:19:17+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:19:43+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:21:04+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:21:07+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:21:13+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ProductEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:ProductEditAjax
+
+[ 2016-11-08T11:21:18+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ProductEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:ProductEditAjax
+
+[ 2016-11-08T11:21:37+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:21:42+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:21:46+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:21:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:21:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:22:03+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:22:10+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:24:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:24:04+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:25:29+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:25:30+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:25:32+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:25:35+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:25:41+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:27:12+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:27:16+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\wwwroot\member\Application\Home\Controller\StoreShopController.class.php 第 53 行.
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:27:22+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:27:27+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:27:31+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: id D:\wwwroot\member\Application\Home\Controller\StoreShopController.class.php 第 53 行.
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:29:14+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:29:21+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:29:30+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='nnn',`typeid`='1',`status`='1',`picsimg`='/Uploads/20161108/112921_ee971bf367a1f80aa5bb1d75c4894ef7.png',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:29:39+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:29:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:30:02+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='nnn',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:31:12+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:31:16+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '4' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `tp_store_product_type` SET `shopname`='nnn',`id`='4',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 )
+ERR: 1062:Duplicate entry '4' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `tp_store_product_type` SET `shopname`='nnn',`id`='4',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 )
+
+[ 2016-11-08T11:31:54+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '4' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `tp_store_product_type` SET `shopname`='nnn',`id`='4',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 )
+ERR: 1062:Duplicate entry '4' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `tp_store_product_type` SET `shopname`='nnn',`id`='4',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 )
+
+[ 2016-11-08T11:32:32+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:32:40+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='nnn',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:32:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='nnn1',`typeid`='1',`status`='1',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE ( 4 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:32:58+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:33:26+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:33:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:34:03+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='nnn1',`typeid`='1',`status`='1',`address`='23',`picsimg`='',`business_about`='&lt;p&gt;nnn&lt;br/&gt;&lt;/p&gt;' WHERE `id` = 3 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:34:08+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:34:13+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:34:49+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T11:34:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:35:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='bbb',`picsimg`='',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:35:04+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:35:08+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:35:29+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='天书世界',`typeid`='1',`status`='1',`address`='天书世界',`picsimg`='',`business_about`='&lt;p&gt;天书世界&lt;/p&gt;' WHERE `id` = 4 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:35:34+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:35:36+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:36:39+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='天书世界',`typeid`='1',`status`='1',`address`='天书世界',`picsimg`='',`business_about`='&lt;p&gt;天书世界&lt;/p&gt;' WHERE `id` = 4 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:38:32+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:39:02+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='蓝月传奇',`typeid`='1',`status`='1',`address`='蓝月传奇',`picsimg`='/Uploads/20161108/113832_f0a9007533e9516155461ad9a569b845.png',`business_about`='&lt;p&gt;蓝月传奇&lt;/p&gt;' WHERE `id` = 4 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:39:38+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:39:42+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:40:24+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:40:43+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:41:12+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:41:20+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:41:23+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:42:00+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:42:03+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='天书世界',`typeid`='1',`status`='1',`address`='天书世界',`picsimg`='/Uploads/20161108/114200_25f2f9e4626ab0e128f6119cd7643a26.png',`business_about`='&lt;p&gt;天书世界&lt;/p&gt;' WHERE `id` = 3 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:42:06+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T11:42:11+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:42:17+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:42:47+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:47:40+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:47:43+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:47:51+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:47:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:48:34+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:48:39+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:48:41+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:49:26+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:50:19+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:50:21+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='大主宰',`typeid`='1',`status`='1',`address`='大主宰',`picsimg`='/Uploads/20161108/115019_1bdbaaa9414a4d3c06ac040573b243c0.png',`business_about`='&lt;p&gt;大主宰&lt;/p&gt;' WHERE `id` = 2 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:50:26+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T11:50:35+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:57:59+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:58:05+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/$(this).attr('data-url')
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'data-url')' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_store_menu` WHERE ( action = '$(this).attr('data-url')' ) LIMIT 1  
+
+[ 2016-11-08T11:59:50+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T11:59:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:00:04+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:ShopSaveStatus
+
+[ 2016-11-08T12:02:15+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:02:26+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:02:41+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:02:59+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:03:16+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:03:32+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:06:37+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:10:15+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:12:54+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:13:07+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T12:13:24+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:13:25+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='bbb',`picsimg`='/Uploads/20161108/121324_58c90eaf5a7c47b3fd12c6c567b4a3a5.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:13:30+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T12:13:34+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T12:13:43+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:13:46+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:13:53+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:13:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:14:01+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T12:14:05+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='/Uploads/20161108/121401_fb1fb11ac6db4328526004abfd015835.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:14:09+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:14:11+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T12:14:16+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T12:14:19+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:14:23+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T12:14:25+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T14:29:59+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:29:59+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:30:08+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:30:20+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:30:28+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:31:45+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:32:01+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:32:44+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:37:57+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:38:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:38:12+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:38:32+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:38:48+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:38:56+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:39:11+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:39:33+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:39:47+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png,/Uploads/20161108/143933_602747804466c54d9f42bcfc758c3cd4.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:39:51+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:39:54+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-11-08T14:40:07+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:40:15+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-11-08T14:40:26+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:40:32+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:40:45+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:40:47+08:00 ] 127.0.0.1 /index.php/Home/Index/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:40:51+08:00 ] 127.0.0.1 /index.php/home/index/logincheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:40:53+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:43:55+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:43:56+08:00 ] ::1 /index.php/Home/Index/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:44:05+08:00 ] ::1 /index.php/home/index/logincheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:44:06+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T14:44:43+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:44:47+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:45:34+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:45:35+08:00 ] ::1 /index.php/Home/Index/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:45:45+08:00 ] ::1 /index.php/home/index/logincheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:45:46+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:48:57+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:57:32+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:59:39+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:59:46+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T14:59:50+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:00:02+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:00:02+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:00:24+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:00:29+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:00:30+08:00 ] ::1 /index.php/Home/Index/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:00:33+08:00 ] ::1 /index.php/home/index/logincheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:00:34+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:02:23+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:02:26+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:02:29+08:00 ] ::1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:06:18+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:06:43+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:06:47+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:07:31+08:00 ] 127.0.0.1 /index.php/home/index/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:08:11+08:00 ] 127.0.0.1 /index.php/Home/storeProduct/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:09:25+08:00 ] 127.0.0.1 /index.php/Home/storeProduct/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:09:29+08:00 ] 127.0.0.1 /index.php/Home/storeProduct/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:10:23+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:10:28+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:13:30+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:24:12+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:24:35+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:26:35+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:27:58+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:28:27+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:28:48+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:29:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:30:49+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:30:51+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductEdit/id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:30:52+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductLD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductLD' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_product_type` WHERE `typeid` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:30:52+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductAttrLD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductAttrLD' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_attr` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `tp_store_attr` WHERE `typeid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_attr_value` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 15 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 16 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:30:56+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductEdit/id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:30:57+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductLD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductLD' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_product_type` WHERE `typeid` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:30:57+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductAttrLD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductAttrLD' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_attr` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_attr` WHERE `typeid` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_attr_value` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 15 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 16 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:31:06+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductEdit/id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:31:07+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductLD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductLD' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_product_type` WHERE `typeid` = 1  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:31:07+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductAttrLD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductAttrLD' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_attr` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_attr` WHERE `typeid` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_attr_value` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 14 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 15 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_attr_value` WHERE ( attr_id = 16 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T15:31:32+08:00 ] 127.0.0.1 /index.php/Home/StoreProductAttr/AttrList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:31:34+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:31:36+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:31:39+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T15:31:47+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopDel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:31:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:33:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:33:06+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:33:34+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:33:36+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:34:29+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:34:41+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:35:02+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:35:09+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:35:38+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:35:40+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:36:10+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:36:29+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:37:03+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T15:37:11+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:37:13+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:37:17+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopSaveStatus/sta/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:37:20+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:37:49+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopDel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:37:52+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:38:55+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:38:59+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:39:01+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:39:07+08:00 ] 127.0.0.1 /index.php/Home/StoreOrder/OrderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:39:15+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:39:18+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:39:21+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:40:16+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T15:40:26+08:00 ] 127.0.0.1 /index.php/Home/StoreType/TypeRecovery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:40:27+08:00 ] 127.0.0.1 /index.php/Home/StoreType/TypeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:40:32+08:00 ] 127.0.0.1 /index.php/Home/StoreType/TypeAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:40:49+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:41:02+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:42:15+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicDel/pathurl/-Uploads-20161108-143933_602747804466c54d9f42bcfc758c3cd4.png/id/5/arrid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicDel' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_product` WHERE ( `id`=5 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\Application\Home\Controller\StoreProductController.class.php 第 390 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:42:24+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:42:27+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png,/Uploads/20161108/143933_602747804466c54d9f42bcfc758c3cd4.png,/Uploads/20161108/154224_012cacc97b534c5a7e601dc340d0027b.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:42:32+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T15:42:39+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:48:08+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:48:17+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopPicDel/pathurl/-Uploads-20161108-143933_602747804466c54d9f42bcfc758c3cd4.png/id/5/arrid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopPicDel' ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:ShopPicDel
+
+[ 2016-11-08T15:48:57+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:49:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopPicDel/pathurl/-Uploads-20161108-143933_602747804466c54d9f42bcfc758c3cd4.png/id/5/arrid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopPicDel' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_product_type` WHERE ( `id`=5 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(/Uploads/20161108/143933_602747804466c54d9f42bcfc758c3cd4.png): No such file or directory D:\wwwroot\member\Application\Home\Controller\StoreShopController.class.php 第 134 行.
+SQL: UPDATE `tp_store_product_type` SET `picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png,/Uploads/20161108/154224_012cacc97b534c5a7e601dc340d0027b.png' WHERE ( `id`=5 ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:49:04+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png,/Uploads/20161108/143933_602747804466c54d9f42bcfc758c3cd4.png,/Uploads/20161108/154224_012cacc97b534c5a7e601dc340d0027b.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T15:49:08+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:49:21+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopPicDel/pathurl/-Uploads-20161108-143933_602747804466c54d9f42bcfc758c3cd4.png/id/5/arrid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopPicDel' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_product_type` WHERE ( `id`=5 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(/Uploads/20161108/143933_602747804466c54d9f42bcfc758c3cd4.png): No such file or directory D:\wwwroot\member\Application\Home\Controller\StoreShopController.class.php 第 134 行.
+SQL: UPDATE `tp_store_product_type` SET `picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png,/Uploads/20161108/154224_012cacc97b534c5a7e601dc340d0027b.png' WHERE ( `id`=5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:52:42+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:52:48+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopPicDel/pathurl/-Uploads-20161108-154224_012cacc97b534c5a7e601dc340d0027b.png/id/5/arrid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopPicDel' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_store_product_type` WHERE ( `id`=5 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(/Uploads/20161108/154224_012cacc97b534c5a7e601dc340d0027b.png): No such file or directory D:\wwwroot\member\Application\Home\Controller\StoreShopController.class.php 第 134 行.
+SQL: UPDATE `tp_store_product_type` SET `picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png' WHERE ( `id`=5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:53:00+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:53:12+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductPicUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ProductPicUpload' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined offset: 1 D:\wwwroot\member\ThinkPHP\Library\Think\Upload.class.php 第 414 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:53:13+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEditAjax.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_store_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE `tid` = 0 ORDER BY weight asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_store_menu` ORDER BY weight asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_store_menu` WHERE ( action = 'ShopEditAjax' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store_product_type` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wwwroot\member\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `tp_store_product_type` SET `shopname`='传奇霸业',`typeid`='1',`status`='1',`address`='传奇霸业',`picsimg`='/Uploads/20161108/121416_31ad2afbd3af33e35456eabac41d6141.png,/Uploads/20161108/155312_0022719963ccc3743c26b6c539d1f12a.png',`business_about`='&lt;p&gt;传奇霸业&lt;/p&gt;' WHERE `id` = 5 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:53:16+08:00 ] 127.0.0.1 /index.php/Home/StoreShop/ShopEdit/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:53:35+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:53:37+08:00 ] 127.0.0.1 /index.php/Home/StoreProduct/ProductAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T15:53:40+08:00 ] 127.0.0.1 /index.php/Home/StoreOrder/OrderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T15:54:22+08:00 ] 127.0.0.1 /index.php/Home/StoreProductAttr/AttrList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T16:47:26+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T16:47:35+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T16:48:17+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T16:48:48+08:00 ] 127.0.0.1 /index.php/home/index/message_list/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T16:48:50+08:00 ] 127.0.0.1 /index.php/home/index/message_list/mymsg/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T16:48:51+08:00 ] 127.0.0.1 /index.php/home/index/message_list/system/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T16:48:52+08:00 ] 127.0.0.1 /index.php/home/index/message_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T16:48:53+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T16:52:09+08:00 ] 127.0.0.1 /index.php/Home/index/manage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T16:52:18+08:00 ] 127.0.0.1 /index.php/Home/Menu_Edit/Menu_Lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T16:52:34+08:00 ] 127.0.0.1 /index.php/home/manage/about_src
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T16:56:14+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T16:56:15+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-08T16:56:49+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:01:12+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:03:00+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:03:02+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:03:02+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:03:02+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:04:03+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:04:38+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:05:18+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:05:24+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:05:32+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:05:43+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:06:17+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:06:33+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:08:07+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:08:53+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:08:55+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:08:55+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:09:12+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:09:14+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:09:25+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:09:32+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:11:31+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:12:48+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:13:26+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:13:42+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:13:48+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:14:01+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:14:29+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:14:54+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:16:33+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:20:09+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:32:42+08:00 ] 127.0.0.1 /index.php/home/manage/about_src
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:32:43+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:33:35+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T17:33:36+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:33:37+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:33:37+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:33:47+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:33:48+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:33:48+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T17:34:19+08:00 ] 127.0.0.1 /index.php/Home/StoreIndex/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

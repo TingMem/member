@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 优惠信息</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+</head>
+
+<body style="background:rgb(238,238,238)">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/shopadmin"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">优惠信息</div>
+
+</div>
+	<div class="main">
+	<div style="margin:10px 0;"><a href="/index.php/home/index/news_add"><img style="width:100%" src="__PUBLIC__/images/shangjia/news_add.png" /></a></div>
+    <volist name='lists' id='lists' empty='$emp'>
+    	<div class="news_list">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="40">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding: 0 5%"><h2><a href="/index.php/home/index/news_art/id/{$lists.id}">{$lists.title}</a></h2></td>
+                            <td width="30%"><if condition='$lists.falg eq 0'><div class="news_t">未审核</div></if></td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="news_about"><a href="/index.php/home/index/news_art/id/{$lists.id}">{$lists.content|strip_tags|mb_substr=0,60,'utf-8'}</a></div></td>
+              </tr>
+            </table>
+	  </div>
+      </volist>
+</div>
+    
+<div style="clear:both;"></div>
+</body>
+</html>

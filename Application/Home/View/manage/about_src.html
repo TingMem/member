@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+
+<div class="main">
+
+  <ul>
+    <form id="form2" name="form2" method="post" action="">
+      <ul>
+        <table class="table-bordered" width="100%" border="0" style="background:#ccc;" cellspacing="1" cellpadding="0">
+          <tr>
+            <td width="80" align="center" bgcolor="#EFEFEF">ID</td>
+            <td width="150" height="35" align="center" bgcolor="#EFEFEF">作者</td>
+            <td width="350" align="center" bgcolor="#EFEFEF">备注</td>
+            <td width="100" align="center" bgcolor="#EFEFEF">发布日期</td>
+            <td align="center" bgcolor="#EFEFEF">简介</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">操作</td>
+          </tr>
+          <volist name='lists' id='lists'>
+            <tr>
+              <td width="150" align="center" bgcolor="#FFFFFF">{$lists.id}</td>
+              <td width="150" height="35" align="center" bgcolor="#FFFFFF">{$lists.admins}</td>
+              <td width="350" align="center" bgcolor="#FFFFFF">{$lists.title}</td>
+              <td width="100" align="center" bgcolor="#FFFFFF">{$lists.uptime|date='Y-m-d',###}</td>
+              <td align="center" bgcolor="#FFFFFF">{$lists.content|strip_tags|mb_substr=0,200,'utf-8'}</td>
+              <td align="center" bgcolor="#FFFFFF"><a href="{:U('manage/about_edit',array('id'=>$lists["id"],'tid'=>I('get.tid'),'thisid'=>I('get.thisid')))}">编辑</a></td>
+            </tr>
+          </volist>
+        </table>
+      </ul>
+    </form>
+    <div class="pagelists">{$page}</div>
+  </ul>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

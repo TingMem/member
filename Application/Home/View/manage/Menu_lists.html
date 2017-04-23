@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+/*控制菜单箭头*/
+.nav-header.collapsed > i.glyphicon-plus-toggle:before {
+    content: "\2b";
+}
+
+.nav-header > i.glyphicon-plus-toggle:before {
+    content: "\2212";
+}
+</style>
+<script>
+	$(document).ready(function() {
+		
+		$(".nav-header")
+		
+        $(".menu_del").click(function(){
+			var pwd = prompt('非技术人员请勿操作，请输入删除密码（Y/N）：');
+			
+			if(pwd=='yes'){
+				return true;
+			}else{
+				if(pwd!=null){
+					alert('密码错误');
+				}
+				return false;	
+			}
+		})
+		
+		$('.collapse').collapse({//展开全部菜单
+		  toggle: true
+		})
+		
+    });
+</script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+    <div class="container" style="padding:50px;">
+        <volist name='type111' id='tp1'>
+        
+            <div style=" padding:10px 0;">
+                <a href="#systemSetting{$tp1.id}" class="nav-header collapsed"  data-toggle="collapse">
+                    <i class="glyphicon glyphicon-plus-toggle"></i>
+                </a>
+                <a href="{$tp1.url}/tid/{$tp1.id}/thisid/{$tp2.id}">{$tp1.typename}</a>[ID:{$tp1.id}]
+               
+                <a href="{:U('Menu_Edit',array('id'=>$tp1['id'],'tid'=>I('get.tid'),'thisid'=>I('get.thisid')),false)}"><i class="glyphicon glyphicon-edit"></i></a>
+                <a style="float:right;" class="menu_del" href="{:U('Menu_Delete',array('id'=>$tp1['id'],'tid'=>I('get.tid'),'thisid'=>I('get.thisid')),false)}">删除</a>
+            </div>
+        
+            <ul id="systemSetting{$tp1.id}" class="collapse" style="height: 0px;">
+                <volist name='type222' id='tp2'>
+                    <if condition="$tp2['tid'] eq $tp1['id']">
+                    <li style="padding:10px 15px;"><a  href="{$tp2.url}/tid/{$tp1.id}/thisid/{$tp2.id}"><span class="glyphicon glyphicon-record"></span>&nbsp;{$tp2['typename']}</a>[ID:{$tp2.id}] <a href="{:U('Menu_Edit',array('id'=>$tp2['id'],'tid'=>I('get.tid'),'thisid'=>I('get.thisid')),false)}"><i class="glyphicon glyphicon-edit"></i></a><a class="menu_del" style="float:right;" href="{:U('Menu_Delete',array('id'=>$tp2['id'],'tid'=>I('get.tid'),'thisid'=>I('get.thisid')),false)}">删除</a></if></li>
+                </volist>
+            </ul>
+    		<div style="border-bottom:1px solid #ccc;"></div>
+        </volist>
+    </div>
+        <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

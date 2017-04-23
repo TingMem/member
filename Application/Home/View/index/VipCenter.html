@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<style>
+.xinxi ul li table tr td { font-size:14px; padding: 10px 0; color:#fff;}
+input { width:80%; height:25px; border:1px solid #CCC; border-radius:3px; font-size:14px; padding:3px;}
+
+</style>
+</head>
+
+<body class="userset_body">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/index"><img class='tytop' src="__PUBLIC__/images/back.png" /></a></div>
+    <div class="fontsize" style="width:50%; text-align:center; color:#fff;float:left;  font-weight:bold;">资料更改</div>
+</div>
+<form id="oForm" name="oForms" action="/index.php/home/vip/vipCenterSave" method="post">
+<div class="user_main">
+<volist name='lists' id='lists'>
+	<div class="xinxi">
+    	<ul>
+        
+        	<li>
+        	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        	    <tr>
+        	      <td style="width:130px;" valign="top"><img  class="imgavatar" src="{$lists.avatar|default='__PUBLIC__/images/avatar/default.jpg'}" /></td>
+        	      <td align="left" style="color:#fff;">{$lists.username}</td>
+        	      <td align="right">
+                  </td>
+        	      <td><div onclick="location.href='/index.php/home/vip/vipAvater'" style="padding:5px; width:60px; color:#fff; background:#ccc;">更改头像</div></td>
+      	        </tr>
+      	    </table>
+        	</li>
+        
+            <li style="clear:both;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">积分</td>
+                    <td width="50%">{$lists.jifen}</td>
+                  </tr>
+                </table>
+		  </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">手机</td>
+                    <td width="50%">{$lists.tel|substr=0,7}**** <a style="color: #06C;" href="/index.php/home/vip/vipTelEdit">更改</a></td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">姓名</td>
+                    <td width="50%"><input name="usercname" type="text" value="{$lists.usercname}" /></td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">帐号</td>
+                    <td width="50%">{$lists.username}</td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">原密码</td>
+                    <td width="50%"><input placeholder="不改请留空" name="password" type="text" value="" /></td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">新密码</td>
+                    <td width="50%"><input placeholder="不改请留空" name="npassword" type="text" value="" /></td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="25%">身份证</td>
+                    <td width="50%">{$lists.card|default='尚未填写身份证'}</td>
+                  </tr>
+                </table>
+            </li>
+            
+            <if condition='$lists.sid neq null'>
+            <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+             
+                              <tr style>
+                                <td width="50%">有效期</td>
+                                <td width="50%">{$lists.startime|date='Y-m-d',###} 至 {$lists.endtime|date='Y-m-d',###}</td>
+                              </tr>
+            
+            </table>
+			</li>
+            </if>  
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                  <tr>
+                    <td width="25%">编号</td>
+                    <td width="50%">{$lists.sid|default='未购买惠民卡'}</td>
+                  </tr>
+                </table>
+            </li>
+            <li style="border:0px; ">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top" width="25%">二维码名片</td>
+                    <td width="50%" align="right"><img style="width:150px" src="{$lists.erweima|default='__PUBLIC__/images/default.jpg'}" /></td>
+                  </tr>
+                </table>
+            </li>
+
+            <div style="clear:both;"></div>  
+        </ul>
+
+    </div>
+    
+</volist>
+</div>
+</form>
+<div class="vipSubbtn">保存更改</div>
+<div style="clear:both;"></div>
+
+<include file="Index/footer" />
+
+</body>
+</html>

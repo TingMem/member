@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<load type="js" file="__PUBLIC__/Js/Viplock.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+	
+}
+table tr td { padding:0 15px;}
+input.ipt { width:250px; height:30px; margin-right:20px; float:left}
+.kuaijie ul li { list-style:none; float:left; padding:5px; border:1px solid #ccc; margin-right:20px; cursor:pointer;}
+.font12 {
+	font-size: 12px;
+	color: #F00;
+}
+
+
+</style>
+<script>
+	$(document).ready(function(e) {
+        $("#yanqi").keyup(function(){
+			if(!$.isNumeric($(this).val())){
+				$(this).val("");
+				$(this).focus();
+			}
+		});
+    });
+</script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+  	  <include file="manage/vipreg_body" />
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

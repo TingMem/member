@@ -1,0 +1,1418 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DEFAU",
+				"DEFAULT_MODULE"
+			],
+			[
+				"json",
+				"$json_str〔variable〕"
+			],
+			[
+				"Or",
+				"$OrderList〔variable〕"
+			],
+			[
+				"type",
+				"$typeabout〔variable〕"
+			],
+			[
+				"json_",
+				"json_encode〔function〕"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"block",
+				"bolck"
+			],
+			[
+				"store_",
+				"store_product"
+			],
+			[
+				"g",
+				"globals\t$GLOBALS['…']"
+			],
+			[
+				"input",
+				"input\tTag"
+			],
+			[
+				"spric",
+				"$sprice〔variable〕"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"layui-btn-",
+				"layui-btn-small"
+			],
+			[
+				"attrv",
+				"attrvModel"
+			],
+			[
+				"find",
+				"find()"
+			],
+			[
+				"cont-b",
+				"cont-box"
+			],
+			[
+				"cont-box",
+				"cont-box1"
+			],
+			[
+				"data-t",
+				"data-tid"
+			],
+			[
+				"N",
+				"Number"
+			],
+			[
+				"val",
+				"value\tAttr"
+			],
+			[
+				"vo",
+				"volist"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"规格",
+				"规格名"
+			],
+			[
+				"remove",
+				"removeClass〔function〕"
+			],
+			[
+				"mouse",
+				"mouseleave〔function〕"
+			],
+			[
+				"SH",
+				"$ShopModel〔variable〕"
+			],
+			[
+				"rgb",
+				"rgb()"
+			],
+			[
+				"r",
+				"relative〔value〕"
+			],
+			[
+				"array_key",
+				"array_key_exists〔function〕"
+			],
+			[
+				"img-",
+				"img-responsive"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"cle",
+				"clear-fixed"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"ass",
+				"assign\t->assign"
+			],
+			[
+				"mo",
+				"model"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"con",
+				"container-fulid"
+			],
+			[
+				"get",
+				"getError"
+			],
+			[
+				"pic",
+				"picsimg"
+			],
+			[
+				"pics",
+				"picsubmit"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"data",
+				"data-url"
+			],
+			[
+				"form",
+				"form2"
+			],
+			[
+				"ord",
+				"order\t->order"
+			],
+			[
+				"Sho",
+				"$ShopModel〔variable〕"
+			],
+			[
+				"btn-",
+				"btn-primary"
+			],
+			[
+				"js",
+				"parseJSON〔function〕"
+			],
+			[
+				"ed",
+				"$editdata〔variable〕"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"su",
+				"submit\t.submit()"
+			],
+			[
+				"for",
+				"form2"
+			],
+			[
+				"this",
+				"$this〔variable〕"
+			],
+			[
+				"where",
+				"where()"
+			],
+			[
+				"cl",
+				"click〔function〕"
+			],
+			[
+				"youji",
+				"youji-bxo"
+			],
+			[
+				"css",
+				"css\t.css() - single"
+			],
+			[
+				"xingcheng",
+				"xingcheng-box"
+			],
+			[
+				"xingc",
+				"xingcheng-box"
+			],
+			[
+				"s",
+				"scrolling\tAttr"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"ba",
+				"base.css"
+			],
+			[
+				"loa",
+				"load\t.load()"
+			],
+			[
+				"bt",
+				"btn-primary"
+			],
+			[
+				"click",
+				"click"
+			],
+			[
+				"bootstra",
+				"bootstrapValidator"
+			],
+			[
+				"ajax",
+				"ajax"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"product",
+				"product_about"
+			],
+			[
+				"seotitle",
+				"$seotitle〔variable〕"
+			],
+			[
+				"attr_va",
+				"$attr_id〔variable〕"
+			],
+			[
+				"impl",
+				"implode〔function〕"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"Shop",
+				"$ShopAttrVal〔variable〕"
+			],
+			[
+				"T",
+				"$TypeModel〔variable〕"
+			],
+			[
+				"imp",
+				"implode〔function〕"
+			],
+			[
+				"attr_val",
+				"$attr_value〔variable〕"
+			],
+			[
+				"attr_v",
+				"attr_value_id"
+			],
+			[
+				"exp",
+				"explode〔function〕"
+			],
+			[
+				"cont",
+				"continue〔keyword〕"
+			],
+			[
+				"id",
+				"$id〔variable〕"
+			],
+			[
+				"ATTrV",
+				"$AttrValue〔variable〕"
+			],
+			[
+				"AttrV",
+				"$AttrValue〔variable〕"
+			],
+			[
+				"Attrv",
+				"$AttrValue〔variable〕"
+			],
+			[
+				"f",
+				"fixed〔value〕"
+			],
+			[
+				"arrid",
+				"$arrid〔variable〕"
+			],
+			[
+				"Attr",
+				"AttrModel"
+			],
+			[
+				"valid",
+				"$valid〔variable〕"
+			],
+			[
+				"attrID",
+				"$attrID〔variable〕"
+			],
+			[
+				"Att",
+				"AttrAdd"
+			],
+			[
+				"add",
+				"addinput"
+			],
+			[
+				"bs3-bloc",
+				"bs3-block-link-button\tbs3-block-link-button"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"te",
+				"textarea\tTag"
+			],
+			[
+				"pa",
+				"placeholder\tAttr"
+			],
+			[
+				"S",
+				"$ShopModel〔variable〕"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"key",
+				"$keyword〔variable〕"
+			],
+			[
+				"me",
+				"$message〔variable〕"
+			],
+			[
+				"ts",
+				"$tsql2〔variable〕"
+			],
+			[
+				"t2",
+				"$t2〔variable〕"
+			],
+			[
+				"t1",
+				"$t1〔variable〕"
+			],
+			[
+				"tota",
+				"total4"
+			],
+			[
+				"mode",
+				"$modelData〔variable〕"
+			],
+			[
+				"back",
+				"background: 〔property〕"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"pass",
+				"$password〔variable〕"
+			],
+			[
+				"user-",
+				"user-menu"
+			],
+			[
+				"field",
+				"field()"
+			],
+			[
+				"re",
+				"relative〔value〕"
+			],
+			[
+				"title",
+				"$title〔variable〕"
+			],
+			[
+				"foc",
+				"focus"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"mysql_sele",
+				"mysql_selectdb〔function〕"
+			],
+			[
+				"mys",
+				"mysql_dbname〔function〕"
+			],
+			[
+				"mysql_",
+				"mysql_connect"
+			],
+			[
+				"db",
+				"db_where\tCI - Active Record DB Where"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"he",
+				"height\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Public/Css/base.css",
+			"settings":
+			{
+				"buffer_size": 8061,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "var rm = 0;"
+			}
+		},
+		{
+			"file": "/C/Users/Admin/Desktop/WxpayAPI_php_v3/example/jsapi.php",
+			"settings":
+			{
+				"buffer_size": 3611,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/wamp/本地站点/hmk - 副本/Public/beecloud/demo/wx/wx.jsapi.php",
+			"settings":
+			{
+				"buffer_size": 3101,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/wamp/www/index.php",
+			"settings":
+			{
+				"buffer_size": 23875,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/wamp/本地站点/qnlynew/include/common.func.php",
+			"settings":
+			{
+				"buffer_size": 20525,
+				"encoding": "Hexadecimal",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "em",
+		"selected_items":
+		[
+			[
+				"em",
+				"Emmet: Evaluate Math Expression"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"jquery",
+				"Snippet: jQuery.ajax"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: I",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/wwwroot/member",
+		"/D/wwwroot/member/Application",
+		"/D/wwwroot/member/Public"
+	],
+	"file_history":
+	[
+		"/C/Users/Admin/Desktop/WxpayAPI_php_v3/lib/WxPay.Config.php",
+		"/C/Users/Admin/Desktop/WxpayAPI_php_v3/index.php",
+		"/D/wwwroot/member/README.md",
+		"/D/wwwroot/member/Public/Css/lrtk.css",
+		"/C/Windows/Microsoft.NET/Framework/v2.0.50727/CONFIG/web.config",
+		"/D/wwwroot/member/Application/Home/Controller/StoreOrderController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/VipController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/IndexController.class.php",
+		"/D/wwwroot/member/Application/Common/Conf/config.php",
+		"/D/wwwroot/member/Application/Home/View/index/footer.html",
+		"/D/wwwroot/member/Application/Home/Controller/StoreProductOrderController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/StoreIndexController.class.php",
+		"/D/wwwroot/member/Application/Home/View/index/store_index.html",
+		"/D/wwwroot/member/Application/Home/View/index/store_order_list.html",
+		"/D/wwwroot/member/Application/Home/View/index/store_list.html",
+		"/D/wwwroot/member/Application/Home/View/html/inc_list.html",
+		"/D/wwwroot/member/Application/Home/View/index/store_product_list.html",
+		"/C/Users/Admin/Desktop/weimi37.5/weimicms/Lib/Action/Home/WeixinAction.class.php",
+		"/C/Users/Admin/Desktop/weimi37.5/weimicms/Lib/Action/Home/TextModel.class.php",
+		"/C/Users/Admin/Desktop/weimi37.5/weimicms/Lib/Action/Home/TextAction.class.php",
+		"/D/MYOA/webroot/general/document/index.php",
+		"/D/MYOA/webroot/general/document/views/send/draft_for.php",
+		"/D/MYOA/webroot/general/document/views/send/draft_edit.php",
+		"/D/MYOA/webroot/general/document/views/send/draft_already.php",
+		"/C/Users/Admin/Desktop/weimi37.5/weimicms/Lib/Action/Home/UsersAction.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/NavPublicController.class.php",
+		"/C/Users/Admin/Desktop/db.php",
+		"/C/Users/Admin/Desktop/common.inc.php",
+		"/D/wwwroot/member/Application/Home/View/index/typemenu.html",
+		"/D/wwwroot/member/Application/Home/Controller/LoginActionController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/NavPublicController.class_bak.php",
+		"/D/wwwroot/member/Application/Home/View/index/store_shop_article2.html",
+		"/C/Users/Admin/Desktop/config.php",
+		"/D/wwwroot/member/Application/Home/View/index/store_product_order.html",
+		"/D/wwwroot/member/Application/Home/View/index/header.html",
+		"/D/wwwroot/member/Application/Home/View/html/inc_shop.html",
+		"/D/wwwroot/member/Public/Css/store.css",
+		"/D/wwwroot/member/Application/Home/Controller/StoreTypeListController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/CheckLoginController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/UserCheckController.class.php",
+		"/D/wwwroot/member/Application/Home/View/html/inc_index.html",
+		"/D/wwwroot/member/Application/Common/Common/function.php",
+		"/D/wwwroot/member/Public/Css/base.css",
+		"/D/wwwroot/member/Application/Home/View/index/store_order_pay.html",
+		"/D/wwwroot/member/Application/Home/View/html/inc_product.html",
+		"/D/wwwroot/member/Application/Home/View/manage/foot.html",
+		"/D/wwwroot/member/Application/Home/View/manage/head.html",
+		"/D/wwwroot/member/Application/Home/Controller/StoreShopIndexController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/StoreTypeController.class.php",
+		"/D/wwwroot/member/Application/Runtime/Cache/Home/992c946f0a3ddb1cc73b4b58ee815e5e.php",
+		"/D/wwwroot/member/Application/Home/Controller/StoreProductAttrController.class.php",
+		"/D/wwwroot/member/Application/Home/Controller/StoreProductController.class.php",
+		"/D/wwwroot/member/Application/Home/View/index/store_product_article.html",
+		"/D/wwwroot/member/Application/Home/Conf/config.php",
+		"/D/wwwroot/member/Application/Home/Controller/StoreShopController.class.php",
+		"/D/wwwroot/member/Application/Home/View/index/store_search.html",
+		"/D/wwwroot/member/Application/Home/View/index/store_shop_article.html",
+		"/D/wwwroot/member/Application/Home/Conf/tags.php",
+		"/D/wwwroot/member/Application/Home/Controller/StoreSpecController.class.php",
+		"/D/wwwroot/member/Application/Home/Model/StoreProductTypeModel.class.php",
+		"/C/Users/Admin/Desktop/畅游钦州主题/index_other_src.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/index_mid.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/top.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/index-news.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/cyqz_tab.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/tab-pathsrc.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/header.htm",
+		"/C/Users/Admin/Desktop/畅游钦州主题/index.html",
+		"/D/wwwroot/member/Public/layui/lay/modules/form.js",
+		"/C/Users/Admin/AppData/Local/Temp/Rar$DRa0.827/nativeShare.js-master/demo.html",
+		"/C/Users/Admin/AppData/Local/Temp/Rar$DRa0.459/nativeShare.js-master/demo.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/ProductAdd.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/ProductEdit.html",
+		"/D/wwwroot/member/Application/Home/View/index/store_top.html",
+		"/D/wwwroot/member/Application/Home/View/public/inc_shop.html",
+		"/D/wwwroot/member/Application/Home/Model/StoreSpecModel.class.php",
+		"/D/wwwroot/member/Public/layui/lay/modules/Jquery.js",
+		"/D/wwwroot/member/Public/Js/jquery.min.js",
+		"/D/wwwroot/member/Public/layui/lay/modules/jquery.js",
+		"/D/wwwroot/member/Public/layui/lay/modules/flow.js",
+		"/D/wwwroot/weixindingcan/Core/Extend/Library/ORG/Util/Prints.class.php",
+		"/D/wwwroot/member/Application/Runtime/Cache/Home/3398f1a33ae6836103a1b93c25f1c5c1.php",
+		"/D/wwwroot/member/Application/Home/View/store/admin/SpecEdit.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/SpecList.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/AttrList.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/AttrAdd.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/AttrEdit.html",
+		"/C/Users/Admin/Desktop/index.css.dump",
+		"/C/Users/Admin/Desktop/index.css",
+		"/D/wwwroot/member/Application/Home/Controller/ManageController.class.php",
+		"/D/wwwroot/member/Application/Home/View/index/store_Article.html",
+		"/D/wwwroot/member/ThinkPHP/Library/Think/Model.class.php",
+		"/D/wwwroot/member/Application/Home/Model/ShopModel.php",
+		"/D/wwwroot/member/Application/Home/Model/index.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/ShopAdd.html",
+		"/D/wwwroot/member/Application/Home/Model/store_product_typeModel.class.php",
+		"/D/wwwroot/member/Application/Home/View/store/admin/ShopList.html",
+		"/D/wwwroot/member/Application/Home/View/index/index.html",
+		"/D/wwwroot/member/Application/Home/View/store/admin/ShopEdit.html",
+		"/C/Users/Admin/Desktop/css.css",
+		"/D/wwwroot/member/Public/Adminlte/dist/css/AdminLTE.min.css",
+		"/D/wwwroot/member/Public/Adminlte/dist/css/AdminLTE.css",
+		"/D/wamp/zhengwu/templets/lvhtml/index_tqyb.htm",
+		"/D/wwwroot/member/Public/Js/fileinput.min.js",
+		"/D/wwwroot/member/Application/Home/View/manage/about_edit.html",
+		"/C/Users/Admin/Desktop/index.html",
+		"/C/Users/Admin/Desktop/zhuye.html",
+		"/D/wwwroot/qnsw_dd/templets/nqstyle/list_news_article.htm",
+		"/D/wwwroot/qnsw_dd/templets/nqstyle/list_fuwu_article.htm",
+		"/D/wwwroot/qnsw_dd/templets/nqstyle/list_article.htm",
+		"/D/wwwroot/member/Application/Home/Controller/VipTongjiController.class.php",
+		"/D/wwwroot/member/Application/Home/View/manage/vip_xiaoliang.html",
+		"/C/Users/Admin/Desktop/index-news.htm",
+		"/D/wwwroot/member/Application/Home/Controller/StoreNavPublicController.class.php",
+		"/C/Users/Admin/Desktop/list_zixun.htm",
+		"/C/Users/Admin/Desktop/nav_zixun.htm",
+		"/C/Users/Admin/Desktop/listnav.htm",
+		"/C/Users/Admin/Desktop/bn_huodong.htm",
+		"/D/wamp/zhengwu/templets/lvhtml/index_mid.htm",
+		"/C/Users/Admin/Desktop/index_xiangcun.htm",
+		"/D/wwwroot/member/Application/Home/Controller/UserController.class.php",
+		"/D/wwwroot/member/Application/Home/View/manage/user_searchlist.html",
+		"/D/wwwroot/member/Public/Js/select.js",
+		"/D/wwwroot/member/Application/Home/View/manage/user_list.html",
+		"/D/wamp/zhengwu/templets/lvhtml/index.htm",
+		"/C/Users/Admin/AppData/Local/Temp/Rar$DIa0.530/demo.php",
+		"/C/Users/Admin/Desktop/user_list.html",
+		"/C/Users/Admin/Desktop/index_other_src.htm"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"你的",
+			"keyword(",
+			"switch",
+			"你的机票",
+			"pre",
+			"keyword(",
+			"keyword()",
+			"switch",
+			"sw",
+			"precisions",
+			"all_sav",
+			"all_save",
+			"关键词",
+			"默认",
+			"like",
+			"identity",
+			"identity impersonate",
+			"include",
+			"falgs",
+			"flags",
+			"；",
+			"login",
+			"reload",
+			"attr",
+			"plt",
+			"limit='6,6'",
+			"row='6'",
+			"80%",
+			"valign=\"top\"",
+			"170",
+			"width=\"150\" height=\"200\"",
+			"width=\"490\"",
+			"490",
+			"%\">",
+			"padding: 20px;",
+			"75%",
+			"http://shangwu.qzlyw.gov.cn/images/tab-split.jpg",
+			"rgba(0, 0, 0, 0) url(\"http://shangwu.qzlyw.gov.cn/images/tab-split.jpg\")",
+			"rgba(0, 0, 0, 0) url(\"http://shangwu.qzlyw.gov.cn/images/tab-split.jpg\") repeat scroll 0 0",
+			"400px",
+			"0",
+			"行程游记",
+			"row='6'",
+			"height=\"180\"",
+			"row='8'",
+			"flag='s' row='6'",
+			"row='8'",
+			"row='7'",
+			"lyf lyf-focus",
+			"kucun",
+			"console.log",
+			"spec-price",
+			"layui.jquery",
+			"alt",
+			"checkbox",
+			"ptl",
+			"picsubmit",
+			"send",
+			"shopid",
+			"picsimg",
+			"status",
+			"attrname",
+			"属性",
+			"规格",
+			"属性添加",
+			"规格",
+			"1920",
+			"autoOperation",
+			"Store_Product_Type",
+			"%\"",
+			"goog",
+			"google",
+			"weight",
+			"{\n",
+			");\n",
+			"81",
+			"name",
+			"listnav2-zx",
+			"zuozhe",
+			"reg",
+			"jd_list",
+			"a>img",
+			")');\n",
+			">\n",
+			"dialog",
+			"file-caption-ellipsis",
+			"...",
+			"file",
+			"$send",
+			" $",
+			"();\n",
+			"产品图片上传",
+			"attrname",
+			"%;\">\n",
+			">\n",
+			"Order",
+			"1",
+			"msg",
+			"client",
+			"n个作品，本次导出为",
+			"pid",
+			"stype",
+			"位作者",
+			"content-wrapper",
+			"page",
+			"code",
+			"$rs",
+			"xls",
+			"lightbox-container-image-box",
+			"lightbox-image",
+			"gallery",
+			"div_dong_js",
+			"公司介绍",
+			";\n",
+			"ceng",
+			"h3",
+			"stype",
+			"手机",
+			"viplock",
+			"addlast",
+			"cxmm"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Public/Css/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var rm = 0;",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"is_xml": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Admin/Desktop/WxpayAPI_php_v3/example/jsapi.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/wamp/本地站点/hmk - 副本/Public/beecloud/demo/wx/wx.jsapi.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/E/wamp/www/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/wamp/本地站点/qnlynew/include/common.func.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Hmk.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\wwwroot\\member\\Hmk.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 318.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

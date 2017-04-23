@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网惠民卡 - 商家信息</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<script>
+	$(document).ready(function(e) {
+        $(".goNum").keyup(function(){
+			if(parseInt($(".goNum").val())>parseInt($(".goNum").attr("rel"))){
+				$(".goNum").val($(".goNum").attr("rel"));
+				//$(".goNum").val('');
+			}
+			$(".me").text($(".goNum").val()*$(".me").attr("rel"));
+		});
+			
+	$(".FFile").click(function(){
+		$("#picFile").click();	
+	});
+
+		$("#picFile").change(function(){
+		  var f = document.getElementById('picFile').files[0];
+		  var src = window.URL.createObjectURL(f);
+		  $("#mypic").attr("src",src);
+		});
+
+	$(".vipSubbtnsk").click(function(){
+		$("#form11").submit();	
+	})
+
+    });
+</script>
+</head>
+
+<body>
+<volist id="lists" name="lists">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/shopadmin"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">{$lists.usercname}</div>
+
+</div>
+<div class="sp_bg"><img id="mypic" width="100%" src="{$lists.pic}"  /><div class="pst"><img class="FFile" width="100%" src="__PUBLIC__/images/upbtnn.png"  />
+
+</div></div>
+<form action="/index.php/home/vip/user_shop_edit_save" method="post" enctype="multipart/form-data" name="form11" id="form11">
+  <ul class="spart">
+    <li>
+    <input type="file" name="picFile" class="picFile" id="picFile" style="display:none" />
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize2">帐号</span></td>
+          <td><span>{$lists.username}</span></td>
+        </tr>
+      </table>
+    </li>
+    
+    <li>
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize2">昵称</span></td>
+          <td><span>{$lists.usercname}</span></td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize2">营业时</span></td>
+          <td><span>
+            <label for="runtime"></label>
+            <input style="height:40px; width:90%; font-size:14px ; padding:0 5px" value='{$lists.runtime}' type="text" name="runtime" id="runtime" />
+          </span></td>
+        </tr>
+      </table>
+    </li>
+  
+    <li>
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize2">密码</span></td>
+          <td><span>********</span></td>
+          <td width="12%"><a href="/index.php/home/vip/user_shop_pwd_edit" style="color: #06C; font-size:16px;">更改</a></td>
+        </tr>
+      </table>
+    </li>
+
+    <li>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize3">简介</span></td>
+          <td><label for="about"></label>
+            <textarea style="height:150px; padding:5px; width:100%; font-size:16px;" name="about" id="about" cols="45" rows="5">{$lists.about}</textarea></td>
+          <td width="5%">&nbsp;</td>
+        </tr>
+      </table>
+    </li>
+    <li></li>
+  </ul>
+</form>
+
+</volist>
+<div style="clear:both;"></div>
+<div class="vipSubbtnsk" style="margin:0;">保存信息</div>
+</body>
+</html>

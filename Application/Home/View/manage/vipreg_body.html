@@ -1,0 +1,110 @@
+
+<form id="form1" name="form1" method="post" action="/index.php/home/vip/vipAddLock">
+  <table class="table-bordered" width="100%" style="background:#ccc;" border="0" align="center" cellpadding="0" cellspacing="1">
+    <tr>
+      <td height="50" colspan="3" align="center" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="60%">&nbsp;</td>
+          <td><a href="/index.php/home/Excel/Excel/date/1">
+            <div style="margin-left:30px; border:1px solid #ccc; padding:5px; background:#eee; cursor: pointer; text-align:center ; float:left;">导出今天</div>
+          </a>
+            <div style="margin-left:30px; border:1px solid #ccc; padding:5px; background:#eee; cursor: pointer; text-align:center ;  float:left;"><a href="/index.php/home/Excel/Excel/date/2">导出近7天</a></div>
+            <a href="/index.php/home/Excel/Excel/date/3">
+            <div style="margin-left:30px; border:1px solid #ccc; padding:5px; background:#eee; cursor: pointer; text-align:center ;float:left;">导出近一月</div>
+            </a>
+            
+            <a href="/index.php/home/Excel/Excel/date/4">
+            <div style="margin-left:30px; border:1px solid #ccc; padding:5px; background:#eee; cursor: pointer; text-align:center ;float:left;">导出全部</div>
+            </a>
+            
+            
+            </td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td height="50" colspan="3" align="center" bgcolor="#FFFFFF">
+      <div style="float:left">卡号发售范围：
+      	<span style="color:red;">{$arr}</span>
+        
+          共[<span style="color:red;">{$vip.count}</span>]张  当前已发售[<span style="color:red;">{$vip.locks}</span>]张  剩余：[<span style="color:red;">{$vip.ok|default='0'}</span>]张</div> <if condition='$_SESSION["level"] eq 10'>实体卡:[<span style="color:red;">{$vip.stk}</span>]张，电子卡[<span style="color:red;">{$vip.internet}</span>]张</if></td>
+    </tr>
+    <tr>
+      <td width="200" height="50" align="center" bgcolor="#FFFFFF">手机：</td>
+      <td bgcolor="#FFFFFF"><label for="username"></label>
+        <input class="ipt" name="username"  type="text" id="username" style="float:left;" maxlength="11" />
+
+        &nbsp;<span class="font12 nametips">&nbsp;*数字，第一位必须是1-9之间</span></td>
+      <td width="20%" rowspan="8" valign="top" bgcolor="#FFFFFF">
+      <div style="padding:5px; border-bottom:1px dashed #ccc; color:#666; font-size:18px; ">您最近绑定</div>
+      <volist id='viplock' name='viplock'>
+      	<div style="padding:5px;<switch name='i'>
+        <case value='1|2|3'>color:red;"></case>
+        <default />color:#999">
+    </switch>{$i}. &nbsp;&nbsp;&nbsp;{$viplock.sid}</div>
+      </volist>
+      </td>
+    </tr>
+    <tr>
+      <td width="200" height="50" align="center" bgcolor="#FFFFFF">密码：</td>
+      <td bgcolor="#FFFFFF"><input class="ipt" type="text" name="password" style="float:left" id="password" />
+      &nbsp;<span class="font12 pwd"></span><span class="font12 resetpwd" style="display:none; float:left;"><input name="pwdtrue" class="pwdtrue"  type="checkbox" value="1" /> 修改密码，不勾选则不修改</span></td>
+    </tr>
+    <tr>
+      <td height="50" align="center" bgcolor="#FFFFFF">姓名：</td>
+      <td bgcolor="#FFFFFF"><input class="ipt" type="text" name="usercname" id="usercname" /></td>
+    </tr>
+    <tr>
+      <td width="200" height="50" align="center" bgcolor="#FFFFFF">身份证：</td>
+      <td bgcolor="#FFFFFF"><input class="ipt" name="card" type="text" id="card" maxlength="18" />
+      &nbsp; <span class="font12">*</span><span class="font12">如配偶是钦州或以其它方式证明自己居住于钦州，请在备注处注明</span></td>
+    </tr>
+    <tr style="">
+    
+      <td width="200" height="50" align="center" bgcolor="#FFFFFF">手机(接收短信)：</td>
+      <td bgcolor="#FFFFFF"><input class="ipt" name="tel" type="text" id="tel" maxlength="11"  /><span class="font12 qixian"></span></td>
+    </tr>
+    <tr>
+      <td height="50" align="center" bgcolor="#FFFFFF">延期生效：</td>
+      <td bgcolor="#FFFFFF"><input value="0" class="ipt" placeholder="3" style="width: 70px !important" name="yanqi" type="text" id="yanqi" maxlength="3" />
+      天 <span class="font12">*</span><span class="font12">请填写正整数，不填则为不延期，只针对未绑定或正在绑定的用户，已绑定的不能延期。</span></td>
+    </tr>
+    <tr>
+      <td height="50" align="center" bgcolor="#FFFFFF">会员卡号：</td>
+      <td bgcolor="#FFFFFF"><input class="ipt" value="{$vip.sid}" name="sid" type="text" id="sid" maxlength="14" />
+  &nbsp; &nbsp;<span class="font12 cidtips"><span class="resetsidspan" style="color:green;fong-size:14px; display:none; float:left;"><input name="resetsid"  class="resetsid" type="checkbox" value="1" /> 更改卡号（挂失或录错）</span> <span class="reendtime" style="color:green;fong-size:14px; display:none; float:left;"><input name="xuqi" style="float:left;"  class="xuqi" type="checkbox" value="1" /> <small style="float: left; font-size:13px; padding-top:3px;">&nbsp;续期</small> &nbsp;&nbsp;&nbsp;<select style="float:left; color:red; display:none;" class="sxuqi" name="sxuqi">
+    <option value="1">1年</option>
+    <option value="2">2年</option>
+    <option value="3">3年</option>
+    <option value="4">4年</option>
+    <option value="5">5年</option>
+    <option value="10">10年</option>
+  </select></span></span></td>
+    </tr>
+    <tr>
+      <td width="200" height="50" align="center" bgcolor="#FFFFFF">备注</td>
+      <td bgcolor="#FFFFFF">
+        <div class="kuaijie" style="margin:20px;">
+          <ul>
+            <li>身份证</li>
+            <li>户口本</li>
+            <li>学生证</li>
+            <li>结婚证</li>
+            <li>暂住证</li>
+            <li>其它证件</li>
+          </ul>
+        </div>
+        <div style="clear:both; padding-top:20px;">
+          <textarea placeholder="请描述用户通过什么方式证明自己是钦州人，如身份证居住地址是钦州可不填写。" name="about" cols="50" rows="5" id="about"></textarea>
+          <span class="font12"> *如配偶是钦州地区户籍时，可使用结婚证购买</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center" bgcolor="#FFFFFF"><p>&nbsp;</p>
+        <div style=" cursor:pointer; float:left; margin-left:400px; text-align:center; color:#fff;" class="manage_reg btn btn-primary">注册绑定</div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></td>
+    </tr>
+  </table>
+</form>

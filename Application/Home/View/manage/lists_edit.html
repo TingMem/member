@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+<div class="main">
+
+  <ul>
+    <form id="form2" name="form2" method="post" action="/index.php/home/index/listeditsave">
+      <ul>
+        <table width="100%" border="0" style="background:#ccc;" cellspacing="1" cellpadding="0">
+          <tr>
+            <td width="260" height="35" colspan="2" align="center" bgcolor="#EFEFEF">商家名</td>
+            <td width="150" align="center" bgcolor="#EFEFEF">商家帐号</td>
+            <td width="100" align="center" bgcolor="#EFEFEF">折扣点</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">结算周期</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">合作状态</td>
+            <td width="160" align="center" bgcolor="#EFEFEF">原价</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">折扣价</td>
+            <td align="center" bgcolor="#EFEFEF">联系电话</td>
+          </tr>
+          <volist name='lists' id='lists'>
+            <tr>
+              <td width="260" height="35" colspan="2" align="center" bgcolor="#FFFFFF"><input name="usercname" type="text" value="{$lists.usercname}" size="20" />
+              <input name="editids" type="hidden" value="{$lists.id}" size="20" /></td>
+              <td width="150" align="center" bgcolor="#FFFFFF"><input name="username" type="text" id="username" value="{$lists.username}" size="15" /></td>
+              <td width="100" align="center" bgcolor="#FFFFFF"><input name="zhekou" type="text" id="zhekou" value="{$lists.zhekou}" size="7" /></td>
+              <td width="120" align="center" bgcolor="#FFFFFF"><input name="jiesuan" type="text" id="jiesuan" value="{$lists.jiesuan}" size="7" />                天</td>
+              <td width="120" align="center" bgcolor="#FFFFFF">
+              <select name="status" id="status">
+              
+              <option value="1" <if condition="$lists.status eq 1">selected="selected"</if>>合作</option>
+              <option value="0" <if condition="$lists.status eq 0">selected="selected"</if>>取消合作</option>
+              </select>  
+              </td>
+              <td width="160" align="center" bgcolor="#FFFFFF">￥
+              <input name="yuanjia" type="text" id="yuanjia" value="{$lists.yuanjia}" size="10" /></td>
+              <td width="120" align="center" bgcolor="#FFFFFF">￥
+              <input name="zhekoujia" type="text" id="zhekoujia" value="{$lists.zhehoujia}" size="10" /></td>
+              <td align="center" bgcolor="#FFFFFF"><input name="tel" type="text" id="tel" value="{$lists.tel}" size="12" /></td>
+            </tr>
+            <tr>
+              <td width="260" height="35" align="center" bgcolor="#FFFFFF"><img src="{$lists.avatar|default='__PUBLIC__/images/avatar/default.jpg'}" style="width:80px; height:80" /></td>
+              <td align="right" bgcolor="#FFFFFF">详细地址&nbsp; &nbsp; </td>
+              <td colspan="5" align="left" bgcolor="#FFFFFF">  &nbsp;
+              &nbsp;<br />
+              &nbsp; &nbsp; <textarea name="address" cols="50" rows="5" id="address">{$lists.address}</textarea>
+              <br />
+              <br /></td>
+              <td align="center" bgcolor="#FFFFFF">邮箱</td>
+              <td align="center" bgcolor="#FFFFFF"><input name="email" type="text" id="email" value="{$lists.email}" size="20" /></td>
+            </tr>
+          </volist>
+        </table>
+        <br />
+        <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center"><input class="btn btn-primary" type="submit" name="sub" id="sub" value="保 存" />
+              &nbsp; &nbsp; <input class="btn btn-primary" onclick="javascript:history.back();" type="button" name="sub2" id="sub2" value="返回上一页" /></td>
+          </tr>
+        </table>
+      </ul>
+    </form>
+  </ul>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

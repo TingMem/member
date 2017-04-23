@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 业绩管理</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+</head>
+
+<body style="background:rgb(0,153,255)">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/shopadmin"><img style="height:30px" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">业绩统计</div>
+
+</div>
+<div class="new_message">惠民卡总数量{$count|default='0'}张</div>
+	<ul class="tongji_main">
+    	<li style="background:rgb(71,100,160)">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="33%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img width="80" src="__PUBLIC__/images/shangjia/day.png" /></td>
+              </tr>
+            </table>
+
+            </td>
+            <td>
+            	<div style="float:right;width:48%; border-left:2px solid #ccc;">
+                	<table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="40" align="center"><span class="fontsize fontcolor">{$lists.daynet.0.dnet|default=0}</span></td>
+                      </tr>
+                      <tr>
+                        <td height="40" align="center"><span class="fontsize fontcolor">网络订单</span></td>
+                      </tr>
+                    </table>
+
+                </div>
+            	<div style="float:left;width:50%;">
+            	  <table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+            	    <tr>
+            	      <td height="40" align="center"><span class="fontsize fontcolor">{$lists.dayvip.0.dvip|default=0}</span></td>
+          	      </tr>
+            	    <tr>
+            	      <td height="40" align="center"><span class="fontsize fontcolor">惠民卡</span></td>
+          	      </tr>
+          	    </table>
+            	</div>
+            </td>
+          </tr>
+        </table>
+	
+        </li>
+        <li style="background:rgb(255,156,37)">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="33%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img width="80" src="__PUBLIC__/images/shangjia/mother.png" /></td>
+              </tr>
+            </table>
+
+            </td>
+            <td>
+            	<div style="float:right;width:48%; border-left:2px solid #ccc;">
+                	<table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="40" align="center"><span class="fontsize fontcolor">{$lists.mothernet.0.mnet|default=0}</span></td>
+                      </tr>
+                      <tr>
+                        <td height="40" align="center"><span class="fontsize fontcolor">网络订单</span></td>
+                      </tr>
+                    </table>
+
+                </div>
+            	<div style="float:left;width:50%;">
+            	  <table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+            	    <tr>
+            	      <td height="40" align="center"><span class="fontsize fontcolor">{$lists.mothervip.0.mvip|default=0}</span></td>
+          	      </tr>
+            	    <tr>
+            	      <td height="40" align="center"><span class="fontsize fontcolor">惠民卡</span></td>
+          	      </tr>
+          	    </table>
+            	</div>
+            </td>
+          </tr>
+        </table>	
+        </li>
+        <li style="background:rgb(229,93,95)">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="33%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img width="80" src="__PUBLIC__/images/shangjia/yellow.png" /></td>
+              </tr>
+            </table>
+
+            </td>
+            <td>
+            	<div style="float:right;width:48%; border-left:2px solid #ccc;">
+                	<table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="40" align="center"><span class="fontsize fontcolor">{$lists.yellownet.0.ynet|default=0}</span></td>
+                      </tr>
+                      <tr>
+                        <td height="40" align="center"><span class="fontsize fontcolor">网络订单</span></td>
+                      </tr>
+                    </table>
+
+                </div>
+            	<div style="float:left;width:50%;">
+            	  <table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+            	    <tr>
+            	      <td height="40" align="center"><span class="fontsize fontcolor">{$lists.yellowvip.0.yvip|default=0}</span></td>
+          	      </tr>
+            	    <tr>
+            	      <td height="40" align="center"><span class="fontsize fontcolor">惠民卡</span></td>
+          	      </tr>
+          	    </table>
+            	</div>
+            </td>
+          </tr>
+        </table>	
+        </li>
+        <li style="background:rgb(0,153,255)">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="33%">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><a class="tongjijiesuan" href="/index.php/home/index/tongjijiesuan"><img width="80" src="__PUBLIC__/images/shangjia/jiesuan.png" /></a></td>
+              </tr>
+            </table>
+
+            </td>
+            <td><table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="40" align="center"><span class="fontsize2 fontcolor">可结算次数</span><span class="fontcolor" style="font-size:18px ; padding:0 10px;">{$mcount.wy|default=0}</span><span class="fontsize fontcolor">次</span></td>
+              </tr>
+              <tr>
+                <td height="40" align="center"><span class="fontsize2 fontcolor">未结算订单数{$mcount.wx|default=0}次</span></td>
+              </tr>
+              <tr>
+                <td height="40" align="center"><span class="fontcolor" style="font-size:14px;">已结算{$data.y}次，消费次数{$data.x}次</span></td>
+              </tr>
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+        </li>
+        <div style="clear:both;"></div>
+    </ul>
+<div style="clear:both;"></div>
+</body>
+</html>

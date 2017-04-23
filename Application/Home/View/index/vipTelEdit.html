@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<style>
+.xinxi ul li table tr td { font-size:14px; padding: 1rem 0; color:#fff;}
+.inputss { width:80%; height:20px; border:1px solid #CCC; border-radius:5px; font-size:14px; padding:10px;}
+.inputm { width:50%; height:20px; border:1px solid #CCC; border-radius:5px; font-size:14px; padding:10px;}
+#v { padding:10px; margin-left:5px; height:40px; border-radius:3px; font-size:14px; background:#09C; border:0px;}
+</style>
+<script>
+$(document).ready(function(e) {
+
+	$("#v").click(function(){
+		//alert('123');
+			if($(".inputss").val().length == 11 && $(".inputm").val().length == 11){
+				$.get('/index.php/home/User/verify',{call:$('.inputm').val(),call2:$('.inputss').val()},function(result){
+					if(result==1){
+						var step = 60;//初始化读秒
+						t = setInterval(function(){
+							step-=1;
+							$("#v").attr("disabled","disabled").val(step).css("cursor",'wait');
+							if(step<=0){
+								$("#v").removeAttr("disabled").val("获取验证码").css("cursor",'pointer');
+								clearInterval(t);
+								step = 60;
+							}
+						},1000);
+					}else{
+						alert('对不起，短信发送失败！');	
+					}
+					
+				});
+			}else{
+				alert('手机号长度不正确');
+			}
+			
+		});
+	    
+		
+		$(".regbtn2").click(function(){
+			if($("#vcode")!=''){
+				$("#oFormf").submit();
+			}else{
+				alert('请输入验证码');	
+			}
+		})
+});
+</script>
+</head>
+
+<body class="userset_body">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/index"><img class='tytop' src="__PUBLIC__/images/back.png" /></a></div>
+    <div class="fontsize" style="width:50%; text-align:center; color:#fff;float:left;  font-weight:bold;">更换电话</div>
+</div>
+<form id="oFormf" name="oFormf" action="/index.php/home/vip/vipupdate" method="post">
+<div class="user_main">
+	<div class="xinxi">
+    	<ul>
+
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="20%">原电话</td>
+                    <td width="50%"><input  class="inputss" placeholder="原电话" name="tel" type="text" value="" /></td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="20%">新电话</td>
+                    <td width="50%"><input class="inputm"  placeholder="新电话" name="tel2" type="text" value="" /><input type="button" name="v" id="v"  value="获取" /></td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="20%">验证码</td>
+                    <td width="50%"><input class="inputss" placeholder="验证码" name="vcode" id="vcode" type="text" value="" /></td>
+                  </tr>
+                </table>
+            </li>
+            <div style="clear:both;"></div>  
+        </ul>
+
+    </div>
+
+</div>
+</form>
+<div class="vipSubbtn2 regbtn2">更新电话</div>
+<div style="clear:both;"></div>
+
+<include file="Index/footer" />
+
+</body>
+</html>

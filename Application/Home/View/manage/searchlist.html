@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+<div class="search">
+  <form id="form1" name="form1" method="post" action="/index.php/home/index/search/tid/{$_GET['tid']}/thisid/{$_GET['thisid']}">
+    <table style="margin:20px auto;" width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="20%"><div style="font-size:18px; font-weight:bold">商家搜索</div></td>
+        <td width="60%"><input style="height:30px; line-height:30px; padding:5px; border-radius:5px; border:1px solid #ccc; width:250px;" placeholder="输入商家名搜索" type="text" name="search" id="search" /></td>
+        <td width="10%"><input type="submit" class="sub btn btn-primary"   name="sub" id="sub" value="搜 索" /></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<div class="main">
+
+  <ul>
+	 
+      	<table class="table-bordered" width="100%" border="0" style="background:#ccc;" cellspacing="1" cellpadding="0">
+          <tr>
+            <td width="50" height="35" align="center" bgcolor="#fafafa"><input type="checkbox" name="all" id="all" />
+            <label for="all"></label></td>
+            <td width="260" align="center" bgcolor="#EFEFEF">商家名</td>
+            <td width="150" align="center" bgcolor="#EFEFEF">商家帐号</td>
+            <td width="100" align="center" bgcolor="#EFEFEF">折扣点</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">结算周期</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">合约状态</td>
+            <td width="160" align="center" bgcolor="#EFEFEF">原价</td>
+            <td width="120" align="center" bgcolor="#EFEFEF">折扣价</td>
+            <td align="center" bgcolor="#EFEFEF">联系电话</td>
+            <td width="100" align="center" bgcolor="#EFEFEF">操作</td>
+          </tr>
+ <volist name='searchlist' id='searchlist'>
+          <tr>
+            <td width="50" height="35" align="center" bgcolor="#FFFFFF"><input type="checkbox" name="select" id="select" /></td>
+            <td width="260" align="center" bgcolor="#FFFFFF">{$searchlist.usercname}</td>
+            <td width="150" align="center" bgcolor="#FFFFFF">{$searchlist.username}</td>
+            <td width="100" align="center" bgcolor="#FFFFFF">{$searchlist.zhekou}</td>
+            <td width="120" align="center" bgcolor="#FFFFFF">{$searchlist.jiesuan|default=0}天</td>
+            <td width="120" align="center" bgcolor="#FFFFFF"><if condition="$searchlist.jiesuan eq 1">合作中<else/>尚未合作</if></td>
+            <td width="160" align="center" bgcolor="#FFFFFF">{$searchlist.yuanjia}</td>
+            <td width="120" align="center" bgcolor="#FFFFFF">{$searchlist.zhekoujia}</td>
+            <td align="center" bgcolor="#FFFFFF">{$searchlist.tel}</td>
+            <td width="100" align="center" bgcolor="#FFFFFF"><span class="fonts"><a href="/index.php/home/index/listedit/id/{$searchlist.id}">编辑</a></span></td>
+          </tr>
+</volist>
+        </table>
+ 
+  </ul>
+    <div class="pagelists">{$page}</div>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

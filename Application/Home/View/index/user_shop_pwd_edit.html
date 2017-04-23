@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网惠民卡 - 商家信息</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<script>
+	$(document).ready(function(e) {
+        $(".goNum").keyup(function(){
+			if(parseInt($(".goNum").val())>parseInt($(".goNum").attr("rel"))){
+				$(".goNum").val($(".goNum").attr("rel"));
+				//$(".goNum").val('');
+			}
+			$(".me").text($(".goNum").val()*$(".me").attr("rel"));
+		});
+			
+	$(".FFile").click(function(){
+		$("#picFile").click();	
+	});
+
+		$("#picFile").change(function(){
+		  var f = document.getElementById('picFile').files[0];
+		  var src = window.URL.createObjectURL(f);
+		  $("#mypic").attr("src",src);
+		});
+
+	$(".vipSubbtnsp").click(function(){
+		$("#form11").submit();	
+	})
+
+    });
+</script>
+</head>
+
+<body>
+<volist id="lists" name="lists">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/vip/user_shop_edit"><img height="90rem" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div style="width:50%; text-align:center; color:#fff;float:left; font-size:4rem; font-weight:bold;">{$lists.usercname}</div>
+</div>
+
+<form action="/index.php/home/vip/vip_pwd_save" method="post" name="form11" id="form11">
+  <ul class="spart">
+    <li>
+    <input type="file" name="picFile" class="picFile" id="picFile" style="display:none" />
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize3">帐号</span></td>
+          <td><span>{$lists.username}</span></td>
+        </tr>
+      </table>
+    </li>
+    
+    <li>
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize3">昵称</span></td>
+          <td><span>{$lists.usercname}</span></td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize3">原密码</span></td>
+          <td><span>
+            <label for="pwd"></label>
+            <input style="height:5rem;  font-size:3rem ; padding:0 0.5rem" type="text" name="pwd" id="pwd" />
+          </span></td>
+        </tr>
+      </table>
+    </li>
+  
+    <li>
+      <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%"><span class="fontsize3">新密码</span></td>
+          <td>
+            <label for="pwd2"></label>
+            <input style="height:5rem; font-size:3rem ; padding:0 0.5rem" type="text" name="pwd2" id="pwd2" /></td>
+          </tr>
+      </table>
+    </li>
+
+    <li>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="25%">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td width="5%">&nbsp;</td>
+        </tr>
+      </table>
+    </li>
+    <li></li>
+  </ul>
+</form>
+
+</volist>
+<div style="clear:both;"></div>
+<div class="vipSubbtnsp" style="margin:0;">保存信息</div>
+</body>
+</html>

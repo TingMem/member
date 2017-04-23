@@ -1,0 +1,37 @@
+/*
+*Edit Time 2016-11-8 
+*惠民卡商城样式   By:冷眼看人心、;
+*/
+
+body{ background: #eee !important; font-family: '微软雅黑' !important;}
+body a{text-decoration: none !important}
+h4 a{ color: #333 !important }
+.bgcolor { background: #fff !important; }
+
+.search-bg { background: rgb(69,147,253); height: 50px; padding: 10px 10px;}
+.search-title { font-size: 18px; font-weight: 800; color: #fff; padding: 0px; text-align: center; }
+.search-btn {cursor: pointer;}
+.type-icon-list { width: 20%; padding: 1% !important; float: left; margin: 0px;  }
+.type-title { text-align: center; }
+.type-title a { color: #333; font-size: 13px; font-weight: bold;margin:10px 0; text-align: center;  }
+.index-ad { margin: 1px; float: left; width: 49.4%; padding: 10px; background: #fff; height: 70px; }
+.vipicon{ border-bottom: 1px solid #ccc; background: #fff; padding: 5px 15px ;border-top:1px #ccc solid }
+.shoplist { border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; margin-bottom: 5px; background: #fff}
+.shoplist img.shoplistimg { height: 80px; width: 120px }
+.fontcolor { color: #fff; }
+.carousel-inner div.item img{ height: 200px; width: 100%; }
+.shop-article-tab {margin: 3px 0px; border-top: 1px solid #ccc ; border-bottom: 1px #ccc solid;}
+.tab-active { border-bottom: 2px solid rgb(50,184,173) }
+.hov { cursor: pointer; }
+.font-big { font-weight: 600; }
+.bt-bot { border-bottom: 1px solid #ccc; padding: 10px;} 
+.arec { cursor: pointer; }
+.cont-box { display: none; }
+
+
+/*重定义LayUI复选框样式*/
+.layui-form-checkbox { height: 22px; line-height: 20px; }
+.layui-form-checkbox span { font-style: 12px; padding:0 3px; }
+
+
+

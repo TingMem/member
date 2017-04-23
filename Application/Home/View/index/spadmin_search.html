@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网惠民卡 - 商家订单管理列表</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+<script>
+	$(document).ready(function(e) {
+		//$(".search_input").val()
+        $(".fdj").click(function(){
+			if($(".search_input").val()!=''){
+				$('#myform').submit();	
+			}else{
+				return false;	
+			}
+		});
+    });
+</script>
+</head>
+
+<body>
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/shopadmin"><img style="width:5rem" src="__PUBLIC__/images/back.png" /></a></div>
+    <div class="search">
+    	<ul>
+        	<li class="search_text"><form action="" id="myform" name="myform" method="post">
+<input placeholder="输入景区、酒店搜索" value="{$keyword}" class="search_input" name="search" type="text" /><div class="search_btn" name="searchbtn"><img class="fdj" src="__PUBLIC__/images/fdj.png" /></div>
+            </form></li>
+        </ul>
+    </div>
+
+</div>
+
+<include file="Index/typemenu" />
+
+<div class="user_main">
+	<volist name='lists' id='lists' empty='找不到您要的商家'>
+<a href="/index.php/home/User/art_spadmin"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="26%" rowspan="2"><img class="shop_fm" src="{$lists.url}" /></td>
+        <td width="46%"><div class="fontsize2">{$lists.product}</div></td>
+        <td align="right" class="fontsize3">原：￥<s class='fontsize3'>{$lists.yuanjia}</s></td>
+      </tr>
+      <tr>
+        <td class="fontsize4">{$lists.body|substr='0,10'}...</td>
+        <td align="right" class="fontsize3" style="color:#F90">现：￥{$lists.price}</td>
+      </tr>
+    </table>
+</a>
+    </volist><br />
+	<div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>
+</body>
+</html>

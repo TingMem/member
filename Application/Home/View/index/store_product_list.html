@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>商品列表</title>
+	<link rel="stylesheet" href="__PUBLIC__/adminlte/bootstrap/css/bootstrap.min.css">
+	<load type="css" file="__PUBLIC__/Css/store.css" />
+	<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+	<load type="js" file="__PUBLIC__/bootstrap/js/bootstrap.min.js" />
+</head>
+<body>
+	<include file="index/store_search" />
+
+<!-- Index AD Start -->
+	<div class="container-fulid" style="margin: 5px 0px; border-top:1px #ccc solid;border-bottom:1px #ccc solid;">
+		<div class="index-ad">AD1</div>
+		<div class="index-ad">AD2</div>
+		<div style="clear: both;"></div>
+	</div>
+<!-- Index AD End -->
+
+<!-- ShopList Start -->
+	<div class="container-fulid">
+		<div class="vipicon">
+			<span ><img style="width: 46px; margin-right: 10px;" src="__PUBLIC__/img/vipicon.png"></span>
+			<span style="font-size: 18px; font-weight: 600; color: rgb(6,193,174);">推荐商家</span>
+		</div>
+	</div>
+	<volist name='shoplist' id='slt'>
+		<div class="row shoplist" style="margin: 0px; margin-bottom: 5px; padding: 10px;">
+			<div class="col-xs-4"><a href=""><img class="shoplistimg" src="<php>$arr = explode(',',$slt['picsimg']);echo $arr[0];</php>"/></a></div>
+			<div class="col-xs-8" style="padding: 3px 30px;">
+				<h4 style="margin: 0px; font-weight: bold;"><a href="">{$slt['shopname']}</a></h4>
+				<p><a href="">{:substr($slt['business_about'],0,90)}</a></p>
+			</div>
+
+		</div>
+	</volist>
+<!-- ShopList End -->
+</body>
+</html>

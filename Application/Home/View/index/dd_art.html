@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 我的订单</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/js/select.js" />
+</head>
+
+<body>
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/User/dd_list"><img height="30" src="__PUBLIC__/images/shangjia/list_back.png" /></a></div>
+    <div class="fontsize fontcolor" style="width:50%; text-align:center; color:#fff;float:left; font-size:18px; font-weight:bold;">我的订单</div>
+</div>
+<div class="main">
+<div class="user_dd_list">
+	<ul>
+    	<li>
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="fontsize3" width="50%" height="40" align="center">入会时间：{$rs.c}</td>
+                <td class="fontsize3"  width="50%" align="center">最近消费：{$rs.u}</td>
+              </tr>
+            </table>
+
+      </li>
+<volist name='lists' id='lists'>
+      <li>
+      	<table width="90%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="fontsize2">订单号：{$lists.sid}</td>
+          </tr>
+          <tr>
+            <td class="fontsize2">支付方式：{$lists.pay}</td>
+          </tr>
+          <tr>
+            <td><div class="fontsize2" style="padding:0px; float:left">价格：￥{$lists.price}<input name="user_dd_price" type="hidden" class="user_dd_price" value="{$lists.price}" /></div><div class="dd_jisuan">计算</div></td>
+          </tr>
+          <tr>
+            <td class="fontsize2">数量：<input style="width:10rem;  border:0.2rem solid #ccc; font-size:3rem; background:#fff;" name="num" id="user_dd_num" value="{$lists.num}" type="text" />&nbsp;&nbsp;&nbsp;{$lists.danwei}</td>
+          </tr>
+          <tr>
+            <td class="fontsize2"><div class="cprice">总金额：{$lists.cprice}</div><input name="user_dd_cprice" type="hidden" class="user_dd_cprice" value="" /></td>
+          </tr>
+          <tr>
+            <td class="fontsize2">
+订单状态：
+            <if condition="($lists.paystatus eq 1) AND ($lists.status eq 0)"><span style="font-size:2rem; color: #090;">待消费</span>
+            <elseif condition="($lists.paystatus eq 0) AND ($lists.status eq 0)" /><div style="width:15rem; height:6rem; line-height:6rem; background: #09F; text-align:center; font-size:3rem; color:#fff; float:right; cursor:pointer;">现在付款</div><span style="font-size:3rem; color:red;">待付款</span>
+            <elseif condition="($lists.paystatus eq 1) AND ($lists.status eq 1)" /><span style="font-size:3rem; color: #999;">已消费</span>
+            <else /><span style="font-size:3rem; color: red;">非法订单(未付款，却成功消费)</span>
+            </if>
+            </td>
+          </tr>
+        </table>
+
+      </li>
+      <li>
+      	<table width="90%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td  width="50%"  valign="middle"><img width="10%" src="__PUBLIC__/images/qingdan.png" /><span class="fontsize" style="font-weight:bold; color:#333">&nbsp;&nbsp;&nbsp;商品清单</span></td>
+            <td valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="fontsize2" width="50%"  valign="middle">商家：{$lists.usercname}</td>
+            <td class="fontsize2" valign="middle">商品：{$lists.product}</td>
+          </tr>
+          <tr>
+            <td class="fontsize2" colspan="2" valign="middle">订单日期：{$lists.xftime|date='Y-m-d',###}</td>
+            </tr>
+        </table>
+
+      </li>
+</volist> 
+      
+    </ul>
+ </div>
+    <div style="clear:both;"></div>
+</div>
+ <div style="clear:both;"></div>
+<include file="Index/footer" />
+
+</body>
+</html>

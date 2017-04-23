@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/js/jquery.min.js" />
+<load type="js" file="http://apps.bdimg.com/libs/crypto-js/3.1.2/rollups/md5.js" />
+<style>
+.xinxi ul li table tr td { font-size:14px; padding: 10px 0; color:#fff;}
+.goumais {
+	background: #09c none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+}
+</style>
+<script>
+$(document).ready(function(e) {
+	//var d = new Date();
+	var t = Date.parse(new Date());
+	//var t = d.getTime();
+//	var st = t.substring(0,10);
+	//alert(t);
+	if(t>1464796800000|| t<1464685200000){
+		$(".goumais").remove();
+	}
+	$("#subs").click(function(){
+		var code = $.trim($(".code").val());
+		//alert(CryptoJS.MD5(code));
+		if(CryptoJS.MD5(code) == '998363049539cb1dc6cc946c36b801ec' && $.trim($(".xh").val())!=''){
+			window.location.href='/index.php/home/Vip/VipGouMains/xh/'+$(".xh").val();
+		}else{
+			alert('验证码不正确或您没有输入学号');
+			return false;
+		}
+	})
+	
+	$("#close").click(function(){
+		$(".xuehao").css("display","none");
+		$(".code").val("");
+		$(".xh").val("");
+	})
+	
+	$("#goumais").click(function(){
+		$(".xuehao").css("opacity","0.9");
+		$(".xuehao").css("background","#000");
+		$(".xuehao").css("display","block");
+		$(".xuehao").height($(document.body).height());
+	});
+	
+	$("#goumai").click(function(){
+		
+		//alert('正在进行系统升级！');
+		//return false;
+		if(confirm('如果您不是钦州户籍，请勿继续购买，否则将可能出现无法进入景区情况！')){
+		$.ajax({
+			url:"/index.php/home/Vip/VipGouMainCheck",
+			type:'GET',
+			success:function(ret){
+				if(ret==1){
+					window.location.href='/index.php/home/Vip/VipGouMains';
+				}else if(ret==0){
+					alert('抱歉，会员卡已售完！');
+					return false;	
+				}else if(ret == 2){
+					alert('此卡尚未开始发售！发售时间2016-05-21 11:00:00');
+					//window.location.href='/index.php/home/Vip/VipGouMain';
+					return false;					
+				}
+			},	
+		})	
+		}else{
+			return false;	
+		}
+		
+	});
+	
+});
+</script>
+</head>
+
+<body class="userset_body">
+<div class="dt_top">
+	<div style="width:25%; float:left;"><a href="/index.php/home/index/index"><img class='tytop' src="__PUBLIC__/images/back.png" /></a></div>
+    <div class="fontsize" style="width:50%; text-align:center; color:#fff;float:left;  font-weight:bold;">个人核验</div>
+</div>
+<div class="user_main">
+<volist name='lists' id='lists'>
+	<div class="xinxi">
+    	<ul>
+        	<li>
+        	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        	    <tr>
+        	      <td style="width:130px;" valign="top"><img  class="imgavatar" src="{$lists.avatar|default='__PUBLIC__/images/avatar/default.jpg'}" /></td>
+        	      <td align="left" style="color:#fff;">{$lists.username}</td>
+        	      <td align="right">
+                        <table width="48" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="center"><a href="/index.php/home/vip/vipCenter"><img class="imgsize" src="__PUBLIC__/images/set.png" /></a></td>
+                          </tr>
+                          <tr>
+                            <td height="30" align="center" class="sizecolor">设置</td>
+                          </tr>
+                        </table>
+                  </td>
+        	      <td>&nbsp;</td>
+      	        </tr>
+      	    </table>
+        	</li>
+            <li style="clear:both;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50%">积分</td>
+                    <td width="50%">{$lists.jifen}</td>
+                  </tr>
+                </table>
+		  </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50%">手机</td>
+                    <td width="50%">{$lists.tel|substr=0,7}****</td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50%">姓名</td>
+                    <td width="50%">{$lists.usercname}</td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50%">帐号</td>
+                    <td width="50%">{$lists.username}</td>
+                  </tr>
+                </table>
+            </li>
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50%">身份证</td>
+                    <td width="50%">{$lists.card|default='尚未填写身份证'}</td>
+                  </tr>
+                </table>
+            </li>
+            <if condition='$lists.sid neq null'>
+            <li>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+             
+                              <tr style>
+                                <td width="50%">有效期</td>
+                                <td width="50%">{$lists.startime|date='Y-m-d',###} 至 {$lists.endtime|date='Y-m-d',###}</td>
+                              </tr>
+            
+            </table>
+			</li>
+            </if> 
+            <li>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                  <tr>
+                    <td width="50%">编号</td>
+                    <td width="50%">
+                    <div class="xuehao" style="width:80%;top:0; padding:20% 10%; left:0; position:fixed; display:none; z-index:10;">请输入活动现场验证码：<br /><input name="code" class="code" style="margin-top:20px; width:100%; height:25px;  " type="text" /><br /><br /><br />请输入您的学生证号：<br /><input name="xh" class="xh" style="margin-top:20px; width:100%; height:25px;  " type="text" /><br /><br /><br />
+                    <a id="subs" class="goumais"  href="#">提交验证</a><br /><br />
+                    <a id="close" class="goumais"  href="#">关闭</a>
+                    </div>
+                    
+                    <if condition='$lists.sid eq null'>
+                    	<a id="goumai"  href="#">未购买,去购买</a><br />
+                        <a id="goumais"  class="goumais" href="#">学生证购买</a>
+                    <else /> <span style="color:#fff;">{$lists.sid|default='未购买惠民卡'}</span></if></td>
+                  </tr>
+                </table>
+            </li>
+            <li style="border:0px; margin-bottom:50px;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top" width="50%">二维码名片</td>
+                    <td width="50%" align="right"><img style="width:150px" src="{$lists.erweima|default='__PUBLIC__/images/default.jpg'}" /></td>
+                  </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+</volist><div style="clear:both;"></div>
+
+</div>
+<div style="clear:both;"></div>
+<a href="/index.php/home/index/loginout"><div class="vipSubbtns">注销登录</div></a>
+<include file="Index/footer" />
+
+</body>
+</html>

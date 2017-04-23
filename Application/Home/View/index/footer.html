@@ -1,0 +1,10 @@
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<div class="down_menu">
+    <ul>
+        <li><a href="{:U('Index/index')}"><img src="__PUBLIC__/images/home.png" /></a></li>
+        <!-- <li><a href="/index.php/home/User/dd_list"><img src="__PUBLIC__/images/down_dd.png" /></a></li> -->
+        <li><a href="{:U('StoreProductOrder/UserOrderList')}"><img src="__PUBLIC__/images/down_dd.png" /></a></li>
+        <li><a href="{:U('Index/about')}"><img src="__PUBLIC__/images/down_fuwu.png" /></a></li>
+        <li><a href="{:U('Index/UserSet',array('username'=>$_SESSION['admin']))}"><img src="__PUBLIC__/images/down_myhome.png" /></a></li>
+    </ul>
+</div>

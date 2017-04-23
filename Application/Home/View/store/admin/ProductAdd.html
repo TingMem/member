@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 惠民卡系统 - 订单列表</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="css" file="__PUBLIC__/Css/fileinput.min.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+
+.col-md-2 { padding: 0px !important; }
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    //二级联动
+    $("#typeid").change(function(event) {
+      $(".rec").remove();
+      $.ajax({
+        type:'POST',
+        url:"/index.php/Home/StoreProduct/ProductLD",
+        data:{'id':$(this).val()},
+        success:function(result){
+          if(result=="<option value='-1'>暂无商家</option>") $("#appends").html("");
+          $("#shopid").html('').append(result);  
+        },
+      })
+    });
+
+    $("#shopid").change(function(){
+      $.ajax({
+        type:'POST',
+        url:"/index.php/Home/StoreProduct/ProductAttrLD",
+        data:{'sid':$("#typeid").val()},
+        success:function(result){
+          $("#appends").html('').append(result);  
+        },
+      });
+    });
+
+    $("#appends").delegate(".attrss",'click',function(){
+        if($(this).is(':checked')==true){
+          $(".disable[name='attrs"+$(this).val()+"']").removeAttr("disabled").eq(0).attr("checked",'checked');
+        }else{
+          $(".disable[name='attrs"+$(this).val()+"']").attr("disabled",'disabled');
+        }
+    });
+//Ready END
+  });
+
+</script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <include file="manage/head" />
+<load type="css" file="__PUBLIC__/BootstrapValidator/css/bootstrapValidator.min.css" />
+<load type="js" file="__PUBLIC__/BootstrapValidator/js/bootstrapValidator.min.js" />
+<load type="js" file="__PUBLIC__/Js/fileinput.min.js" />
+<load type="js" file="__PUBLIC__/Js/fileinput_locale_zh.js" />
+<link href="__PUBLIC__/bootstrap-dialog/bootstrap-dialog.min.css" rel="stylesheet">
+<script src="__PUBLIC__/bootstrap-dialog/bootstrap-dialog.min.js"></script>
+
+        <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="background-color: #fff; ">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-md-9 column">
+            <form class="form-horizonta product-add" name="form1" data-type='ajax' id="form1" method="post" action="{:U('ProductAddAjax')}" role="form">
+              <div class="form-group">
+                 <label for="title">关键词标题</label>
+                 <input name="seotitle" placeholder="三娘湾,八寨沟,景区" class="form-control" id="seotitle" type="text" />
+              </div>
+              <div class="form-group">
+                 <label for="spname">产品名称</label><input placeholder="三娘湾景区门票" name="productname" class="form-control" id="productname" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="title">分类信息</label>
+                <div class="form-inline">
+                  <select name="typeid" id="typeid" class="form-control">
+                    <option class="rec" value="">请选择</option>
+                    <volist name='tn' id='tn'>
+                      <option value="{$tn.id}">{$tn.typename}</option>
+                    </volist>
+                  </select>
+
+                </div>
+
+              </div> 
+              <div class="form-group">
+                  <label for="title">商家信息</label>
+                    <div class="form-inline">
+                    <select name="shopid" id="shopid" class="form-control">
+                      <option value="">请 选 择</option>
+                    </select>
+                  </div>
+              </div>
+              <h3>附加属性</h3>
+              <div id="appends" style="padding-left: 50px;">
+
+              </div>
+
+              <div class="form-group row clearfix">
+                <div class="col-md-2"><label for="point">优惠点</label></div><div class="col-md-2"><input name="point" placeholder="如：90" class="form-control" id="point" value="100" type="text" /></div><div class="col-md-8">90则表示在优惠价的基础上再进行9折折扣，不打折为100</div>
+              </div>
+              <div class="form-group row clearfix">
+                 <div class="col-md-2"><label for="oprice">市场价</label></div><div class="col-md-2"><input class="form-control" name="oprice" id="oprice" placeholder="如：99" type="text" /></div><div class="col-md-8">单位：元</div>
+              </div>
+              <div class="form-group row clearfix">
+               <div class="col-md-2"><label for="price">优惠价</label></div><div class="col-md-2"><input name="price" placeholder="如：88" class="form-control" id="price" type="text" /></div><div class="col-md-8">单位：元</div>
+              </div>
+              <div class="form-group row clearfix">
+                <div class="col-md-2"><label for="purchase">限购次数</label></div><div class="col-md-2"><input class="form-control" id="purchase" placeholder="3" name="purchase" type="text" /></div><div class="col-md-8">次（个人限购次数，-1为不限制）</div>
+              </div>
+
+              <div class="form-group row clearfix">
+                <div class="col-md-2"><label for="status">商品状态</label></div><div class="col-md-2">
+                  <select name="status" id="status" class="form-control">
+                    <option value="1">立即上架</option>
+                    <option value="0">以后上架</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row clearfix">
+                <div class="col-md-2"><label for="stock">库存</label></div><div class="col-md-2"><input placeholder="10" class="form-control" id="stock" name="stock" type="text" /></div><div class="col-md-8">商品数量</div>
+              </div>
+
+              <div class="form-group">
+                <label for="pics">产品图片(最大2M/张)</label><input data-preview-file-type="text" multiple="multiple" id="pics" name="pics[]" type="file" />
+                <input type="hidden" name="picsubmit" class="picsubmit" value="">
+              </div>
+              <div class="form-group"><label for="about">产品介绍</label><textarea style="min-height: 300px"  name="product_about" id="product_about"></textarea>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="__PUBLIC__/bdUe/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="__PUBLIC__/bdUe/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript"> 
+    var editor = new UE.ui.Editor(); 
+    editor.render("product_about"); 
+//1.2.4以后可以使用一下代码实例化编辑器 
+</script>
+              </div>
+              <div style="text-align: center;"><button type="button" name="submit" class="btn btn-primary btn-sub">提交产品</button></div>
+              
+
+            </form>
+          </div>
+        </div>
+      </div>
+  	</div>
+    <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+  </div>
+</body>
+<script type="text/javascript">
+  
+$(document).ready(function(){
+
+
+
+//Ajax图片上传 - bootstrap-inputfile
+  $("#pics").fileinput({
+    'showUpload':true,        //显示上传按钮
+    'previewFileType':'any',  //提交类型 POST或GET
+    'maxFileCount':5,         //最大上传数量
+    'allowedPreviewTypes':['image','text'], //文件类型
+    'uploadAsync':true,         //开启Ajax提交
+    'uploadUrl':'/index.php/Home/StoreProduct/ProductPicUpload',
+    'enctype': 'multipart/form-data',
+    'msgFilesTooMany':'抱歉，您最多可以上传5张图片',
+
+  }).on("fileuploaded", function(event, outData) {
+    //文件上传成功后返回的数据
+    var result = outData.response.data;
+    // 对应的input 赋值
+    if($(".picsubmit").val()!=''){
+      $(".picsubmit").val($(".picsubmit").val()+","+result);
+    }else{
+      $(".picsubmit").val(result);
+    }
+});
+
+
+
+    //验证表单并以Ajax方式提交数据
+
+$(".btn-sub").click(function(){
+$('form').data('bootstrapValidator').validate(); 
+ var sub = $("#form1").data('bootstrapValidator').isValid();
+ if(sub){
+    var url = $('form').attr('action');
+    var data = $('form').serializeArray();
+    $.ajax({
+      type:'POST',
+      datatype:'json',
+      data:data,
+      url:url,
+      success:function(result){
+        if(result=='Success'){
+
+          BootstrapDialog.show({
+            title:'提示',
+            message:'恭喜，您的产品已经添加成功，在未做修改之前请勿重复提交！',
+            buttons:[{
+              label:'知道了',
+              action:function(dialog){
+                dialog.close();
+              }
+            }]
+          })
+          $('.btn-sub').attr('disabled','disabled').html('已提交');
+        }
+      }
+    });
+ }
+});
+   
+
+      $('#form1').bootstrapValidator({
+
+　　　　　message: 'This value is not valid',
+          feedbackIcons: {
+              valid: 'glyphicon glyphicon-ok',
+              invalid: 'glyphicon glyphicon-remove',
+              validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+            seotitle: {
+              validators: {
+                  notEmpty: {
+                      message: '请输入产品名称'
+                  }
+              }
+            },
+              productname: {
+                validators: {
+                    notEmpty: {
+                        message: '请输入Seo关键词'
+                    }
+                }
+              },
+            typeid: {
+            validators: {
+                notEmpty: {
+                    message: '请选择分类信息'
+                }
+              }
+            },
+
+            shopid: {
+              validators: {
+                notEmpty: {
+                    message: '请选择分类信息'
+                }
+              }
+            },
+            point: {
+              validators: {
+                notEmpty: {
+                    message: '请输入折扣点'
+                },
+                between:{
+                    min:1,
+                    max:100,
+                    message:'请输入1-100的整数，如输入90则九折，80则8则，越大越接近原价'
+                }
+              }
+            },
+                price: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入优惠价'
+                        },
+                        numeric:{
+                            message:'必须是数字'
+                        },
+                        between:{
+                            min:0,
+                            max:9999999,
+                            message:'优惠价不能为负数'
+                        }
+                    }
+                },
+                purchase: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入限购数量'
+                        },
+                        between:{
+                          min:-1,
+                          max:1000,
+                          message:'-1至1000'
+                        }
+                    }
+                },
+                stock: {
+                    validators: {
+                        notEmpty: {
+                            message: '请输入库存数量'
+                        },
+                        between:{
+                          min:0,
+                          max:10000000,
+                          message:'0到一千万'
+                        }
+                    }
+                }
+            }
+      }).on('error.field.bv', function(e, data) {
+          $('.btn-sub').attr('disabled','disabled');
+        
+      }).on('status.field.bv', function(e, data) {
+          $('.btn-sub').removeAttr('disabled').html('提交产品');
+      });
+
+})
+
+</script>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<script>
+	$(document).ready(function(e) {
+        $("#form2").submit(function(){
+			if($("#title").val()==null||$("#myEditor").val()==null)	{
+				alert('标题和内容必须填写!');
+				return false;	
+			}
+		})
+    });
+</script>
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+table tr td { padding:10px;}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+<div>
+
+  <ul style="margin:0px;">
+    <form id="form2" name="form2" method="post" action="{:U('manage/help_add_save',array('tid'=>I('get.tid'),'thisid'=>I('get.thisid')))}">
+      <table class="table-bordered" width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="250" height="80" align="right">标题</td>
+          <td><label for="title"></label>
+          <input type="text" placeholder="请输入帮助标题" style="width:300px;" name="title" id="title" /></td>
+        </tr>
+        <tr>
+          <td width="250"  align="right">内容</td>
+          <td><textarea style="height:400px; width:800px;" name="content" id="myEditor">请输入帮助指南</textarea>  
+    <!-- 配置文件 -->
+<script type="text/javascript" src="__PUBLIC__/bdUe/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__PUBLIC__/bdUe/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+<script type="text/javascript"> 
+
+    var editor = new UE.ui.Editor(); 
+
+    editor.render("myEditor"); 
+    //1.2.4以后可以使用一下代码实例化编辑器 
+
+    //UE.getEditor(’myEditor’) 
+
+</script>  </td>
+        </tr>
+        <tr>
+          <td width="250" height="80" align="right">&nbsp;</td>
+          <td><input class="btn btn-primary" type="submit" name="添加" id="添加" value="提  交" /></td>
+        </tr>
+      </table>
+
+    </form>
+  </ul>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 会员卡系统</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<load type="css" file="__PUBLIC__/bootstrap/css/bootstrap.css" />
+<load type="js" file="__PUBLIC__/bootstrap/js/bootstrap.min.js" />
+<script>
+	$(document).ready(function(e) {
+		
+        $(".editmsg").click(function(){
+			$("#myModalLabel").html("修改回复：");
+			$("#msgid").val($(this).attr("msgid"));	
+			var msgid = $(this).attr("msgid");
+			$.ajax({
+				type:"POST",
+				url:"/index.php/home/manage/msgedit",
+				data:{id:msgid},
+				dataType:"Json",
+				success: function(JsonStr){
+					//alert(JsonStr);
+					if(JsonStr!=0){
+						$("#msgcont").val(JsonStr.retcont);
+					}else{
+						alert('没有找到该回复。');	
+					}
+				}
+			});
+			
+		});
+		
+		$("#huifusub").click(function(){
+			var cont = $("#msgcont").val();
+			var retid = $("#msgid").val();
+			$.ajax({
+				type:'POST',
+				url:"/index.php/home/manage/retmsg",
+				data:{cont:cont,retid:retid},
+				success: function(result){
+					//alert(result);
+					if(result==1){
+						alert('回复修改成功');
+						$("#modalclose").click();
+						window.location.reload();//刷新当前页面.
+					}else{
+						alert('回复修改失败！');	
+					}
+				},
+			});
+		});
+		
+    });
+</script>
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+table tr td { padding:10px;}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">回复修改</h4>
+      </div>
+      <div class="modal-body">
+      	<input name="msgid" id="msgid" type="hidden" value="" />
+		 <textarea id="msgcont" name="msgcont" class="form-control" rows="5"></textarea>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" id="huifusub" class="btn btn-primary">保存</button>
+        <button type="button" id="modalclose" class="btn btn-default" data-dismiss="modal">关闭</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <ul>
+      <table style=" border:1px solid #ccc; padding:0 50px;" width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="250" height="80" align="center"><h3>{$body.title}</h3><div style="padding:30px 0 10px 0; font-size:14px; border-bottom:1px solid #ccc;">留言者：{$body.author} 留言时间：{$body.mtime|date="Y-m-d H:i:s",###}</div></td>
+        </tr>
+        <tr>
+          <td  align="left" style="font-size:14px;">{$body.body|htmlspecialchars}</td>
+        </tr>
+        <tr>
+          <td  align="left" style="font-size:14px;">
+			
+            <div style="padding:5px; background:#999; margin:0 10px;">管理员回复：</div>
+            <volist name="result" id="vb" empty='管理员尚未回复'>
+            <!--huifu  start -->
+            <div style=" margin:10px 20px;">{$vb.retadmin}回复：{$vb.retcont}  <if condition="{$vb.retadmin} eq $_SESSION['admin']"><a style="color:#06C; cursor:pointer;" href="#" rel="{$vb.retcont}" class="editmsg"  msgid="{$vb.id}" data-target="#myModal"  data-toggle="modal">修改</a></div>
+            
+            </volist>  
+          </td>
+        </tr>
+      </table>
+  </ul>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+/* 
+* Edit Time 2016-03-29 
+* Edit BY: 艺术
+* 此样式针对钦州旅游网会员卡系统书写
+*/
+html { font-family:"微软雅黑";}
+body{ margin:0px; padding:0px;}
+ul,ul li{ list-style:none; padding:0; margin:0px;}
+a { text-decoration:none; color: #666;}
+.content-wrapper { padding-top:10px;}
+#goumai {font-size:14px; color:#fff; background:#09C; display:block; padding:5px 10px;  text-align:center;}
+a img {border:0px;}
+.fontsize{ font-size:18px; }
+.sizecolor {font-size:14px; color:#fff; padding:5px 0; }
+.fontsize2{ font-size:16px; padding:10px 0; }
+.fontsize3{ font-size:14px;  }
+.fontsize4{ font-size:2rem; color:#666; }
+.fontcolor { color:#fff;}
+.tp_top { height:40px; padding: 5px 4%; background:#4FA7FF; color:#fff; text-align:center;}
+.dt_top { height:40px; line-height:40px; background:rgb(0,153,255); padding:5px 3% 0px 3%;}
+
+.imgsize{ height:40px;}
+.imgavatar { width:88px; height:88px;border-radius:60px;}
+.span_red { color: #3C003C;}
+.xiaoxibox{ width:18px; height:18px; background:red; border-radius: 9px; position:relative;left:-18px; line-height:15px;  font-size:10px; float:right;  text-align:center; color:#fff; }
+table tr td { color:#333;}
+.tytop { height:30px; line-height:30px}
+
+.main { margin:5%;}
+.userset_body{background:url(/public/images/user_bg.png); background-size:100%;}
+.user_main{ clear:both; padding:3%;}
+.xinxi ul li { border-bottom:1px dashed #fff; padding:2% 3%; color:#fff; }
+/*.main ul li { background:#00478E; color:#fff; font-size:20px; font-weight:bold; text-align:center; width:40%; min-height:130px; cursor:pointer; line-height:130px; float:left; margin:5%;}*/
+
+.login { width:100%; height:300px; border-radius:2rem; left:50%;  margin-top:30%; }
+.adminlogin { width:100%; height:300px; border-radius:2rem; left:50%;  margin-top:10%; }
+
+.reg { width:100%; height:300px; border-radius:2rem; left:50%;  margin-top:20%; }
+.reg table tr td { padding:5px 0;}
+h1 { font-size:18px; font-weight:bold; font-family:"微软雅黑" ; color:#333; text-align:center;  padding:0; margin:0 auto; }
+h2 {font-size:14px; font-weight:bold; font-family:"微软雅黑" ; color:#333;  padding:0; margin:0;}
+.sub { cursor:pointer;}
+.input{ width:73% !important; padding:3px !important; height:40px !important; line-height:40px !important; font-size:16px !important; border:none; border-radius:0px 5px 5px 0px !important; background:rgb(209,211,211); }
+
+.input2{ width:300px !important; padding:3px ; height:40px; line-height:40px; font-size:18px; border:none; border-radius:0px 5px 5px 0px ; background:rgb(209,211,211); }
+
+.input3{  padding:10px ; height:65px; line-height:65px; font-size:18px; border:none; border-radius:0px 12px 12px 0px ; background:rgb(209,211,211); }
+.uico2 { width:100px; padding:10px; height:40px; line-height:40px;  font-size:16px; border-radius:5px 0 0 5px; background:rgb(209,211,211); float:left;}
+.uico { width:17%; padding:3px; height:40px; line-height:40px;  font-size:16px; border-radius:5px 0 0 5px; background:rgb(209,211,211); float:left;}
+.uico img { height:30px;}
+.h3 { font-size:16px; font-weight:bold; color:#333; padding:0 10px;}
+
+
+/* 列表页分页 */
+.pagelist{ text-align:center; background:#f1f1f1; padding:1rem 0;}
+.pagelist div{ font-size:14px;}
+.pagelists{ text-align:center; background:#f1f1f1; padding:1rem 0;}
+.pagelists div{ font-size:14px; width:}
+.pagelist a{ font-size:14px;margin:0 10px; border:#6185a2 solid 1px; display:inline-block; padding:3px 5px 3px; line-height:20px; background:#fff; color:#6185a2;}
+.pagelist span{ margin:0 5px; border:#6185a2 solid 1px; display:inline-block; padding:2px 6px 1px; line-height:16px; color:#6185a2; color:#fff; background:#6185a2;}
+
+
+
+
+.main { width:96%; margin:2% 2% 45px 2%;}
+.tp_main_menu { min-height:150px;}
+.tp_main_menu ul li{ padding:5px 2px;width:48%; float:left; }
+.tp_main_menu ul li a img { width:100%;}
+.down_menu { height:45px; width:100%; padding:0 3%; background:url(/public/images/bottom_menu.png); background-size:100%; clear:both; position: fixed; bottom:0px;}
+.down_menu ul li { padding:10px 3px; float:left; width:25%; }
+.down_menu ul li a img { height:25px;}
+
+
+/* 商家后台 */
+.shop_top { background:url(/public/images/shangjia/index_top.png) no-repeat ; background-size:100%; height:100px; padding:25px 10% 15px;}
+.dd_list{ margin-bottom:2px; position:relative;}
+.new_message {width:94%; float:left; height:30px; line-height:30px;  text-align:center; color:#fff; font-size:16px; padding:5px 3%; background:rgb(131,182,0)}
+
+/* 商家统计 */
+.tongji_main li{ width:90%; padding:5%; height:100px; clear:both; }
+
+/* 新闻资讯 */
+.news_list { background:#fff; border-radius:5px; margin-bottom:10px;}
+.news_about { padding:5%; font-size:14px;font-family:"微软雅黑"; border-top:1px dashed #ccc;}
+.news_t { width:80px; font-size:14px;  color:#fff; text-align:center; height:30px; line-height:30px; background:rgb(255,0,0); border-radius:3px; float:right; margin-right:10%;}
+.news_add { margin:5%;}
+
+.diy_padd { padding:0 5%; height:40px; line-height:40px;}
+.test{ border:none; padding:5%; width:90%; font-size:14px; height:150px;}
+.show { display:none; width:90%; padding:5%;}
+#edit { display:none;}
+.pst { float:right; position:relative; margin-top:50px; width:30%;}
+
+
+/* 个人订单列表 */
+.user_dd_list ul li{ border-bottom:1px dashed #ccc; min-height:40px; margin:0 0 10px 0; padding:0px 0 10px 0 }
+.dd_jisuan {font-size:3rem ; color:#fff; text-align:center; height:3rem; line-height:3rem; padding:1rem;background: #09F ; float:left; cursor:pointer;margin-left:30px;}
+.vipSubbtn { width:100%; height:40px ; line-height:40px; font-size:18px; color:#fff; text-align:center; border-radius:5px; background:rgb(227,102,96);margin-bottom:50px; cursor:pointer;}
+.vipSubbtnabc { width:100%; height:40px; line-height:40px; font-size:18px; color:#fff; text-align:center; border-radius:5px; background:rgb(227,102,96);margin-bottom:50px; cursor:pointer;}
+.vipSubbtns { width:100%; height:40px; line-height:40px; font-size:18px; color:#fff; text-align:center; border-radius:5px; background:rgb(227,102,96);margin-bottom:50px; cursor:pointer;}
+.vipSubbtnsk { width:100%; height:40px; line-height:40px; font-size:18px; color:#fff; text-align:center; border-radius:5px; background:rgb(227,102,96);margin-bottom:50px; cursor:pointer;}
+.vipSubbtnsp { width:100%; height:40px; line-height:40px; font-size:18px; color:#fff; text-align:center; border-radius:5px; background:rgb(227,102,96);margin-bottom:50px; cursor:pointer;}
+.vipSubbtn2 { width:100%; height:40px; line-height:40px; font-size:18px; color:#fff; text-align:center; border-radius:5px; background:rgb(227,102,96);margin-bottom:50px; cursor:pointer;}
+/* 用户注册 */
+.regbtn { height:30px; padding:5px; background: #09C; font-size:14px; color:#fff; float:left; margin-left:20px; cursor:pointer; border:0;}
+
+
+.search{width:73%; text-align:center; color:#fff;float:left; font-size:14px; font-weight:bold;}
+.search_text input.search_input{ width:75%; float:left; height:4rem; padding:1rem; border:0px; background:#fff; border-radius:1rem   0 0 1rem; font-size:3rem;}
+.search_btn{ width:15%;border:0px; border-left:0.1rem solid #ccc; float:left; height:4rem; padding:1rem; background:#fff; border-radius:0 1rem  1rem 0; font-size:3rem;}
+.search_btn img { width:60%;}
+
+.typemenu { margin:2rem;}
+.typemenu ul li { padding:1rem 3rem; margin-right:2rem; background: #EBEBEB; color:rgb(34,168,185); text-align:center; float:left; border-radius:1rem; font-size:3rem; font-weight:bold;}
+.typemenu ul li.tp_focus { background:#fff; border:0.1rem solid rgb(34,168,185);}
+.shop_fm {width:94%;}
+
+
+/* 购买商品页 */
+.spart li {padding:5px 10px;border-bottom:1px solid #ccc;}
+.goNum { width:15rem; font-size:3rem; padding:0.5rem 1rem; border:0.2rem rgb(255,51,0) solid;}
+.me { font-size:18px; color:#FC0;}
+.spart li table tr td span { font-size:16px;}
+.shop_btndiv{ width:100%;}
+.shop_btndiv img { width:100%; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+/* 后台管理菜单 */
+
+.adminmenu{ background:#09F !important;}
+.adminmenu ul li{ padding:10px !important; color:#fff !important; font-size:16px !important; float:left ;}
+.adminmenu ul li:hover { background:#093 !important}
+.menufocus {background: #95CAFF !important}
+
+
+
+
+
+
+
+

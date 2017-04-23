@@ -1,0 +1,122 @@
+	<extend name="html:inc_shop" />
+
+  <block name="content">	
+  <script>
+  //引入layui模块
+    layui.use(['layer', 'form'], function(){
+      var layer = layui.layer
+      ,form = layui.form();
+    });
+  </script> 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var myTouch = util.toucher(document.getElementById('carousel-example-generic'));  
+      myTouch.on('swipeLeft',function(e){  
+          $('#carright').click();  
+      }).on('swipeRight',function(e){  
+          $('#carleft').click();  
+      });  
+
+      //幻灯
+      $(".carousel-inner div").eq(0).addClass("active");
+      $(".carousel-indicators li").eq(0).addClass("active");
+
+      $(".cont-box").eq(0).css("display",'block');
+      $("div.hov").click(function(){
+        $("div.hov").removeClass("tab-active");
+        $(this).addClass("tab-active");
+        $(".cont-box").css('display','none');
+        $("#"+$(this).attr('data-id')).css('display','block');
+      });
+
+      var form = layui.form();
+      form.on('checkbox',function(data){
+
+        var price = jQuery(".price[data-tid="+data.elem.alt+"]");
+        var oprice = jQuery(".oprice[data-tid="+data.elem.alt+"]");
+        console.log(price['0'].innerText);
+        if(data.elem.checked==true){
+
+            price.text(Number(price['0'].innerText)+Number(data.elem.placeholder));
+            oprice.text(Number(oprice.html())+Number(data.elem.placeholder));
+        }else{
+            price.text(Number(price['0'].innerText)-Number(data.elem.placeholder));
+            oprice.text(Number(oprice.html())-Number(data.elem.placeholder));
+        }
+      });
+    })
+  </script>
+	<div class="shop-article-tab">
+		<table name='tab' width="100%" style="text-align: center;">
+			<tr>
+				<td><div data-id="cont-box1" class="tab-active hov" style="height: 30px;"><h4 class="h4" style="font-weight: 600;">预订</h4></div></td>
+				<td style="width: 1px; color: rgb(50,184,173)">|</td>
+				<td><div data-id="cont-box2" class="hov" style="height: 30px;"><h4 class="h4" style="font-weight: bold;">详情</h4></div></td>
+			</tr>
+		</table>
+	</div>
+	<div class="cont-box" id="cont-box1">
+		<volist name="productlist" id="plt" empty="暂无商品">
+  			<div class='bt-bot'>		
+  				<table name="cont-box1" style="width: 100%;">
+  					<tr>
+  						<td>
+  						<div class="row" style="margin-right: 0px;">
+  							<div class="col-xs-4">
+  							<h4 class="font-big">{$plt.product_name}</h4>
+  							</div>
+
+  							<div class="col-xs-4" style="border-left: 2px solid #ccc; height: 40px; line-height: 40px;">
+                  <input type="hidden" name="productid" value="{$plt.id}">
+  								<span style="color: rgb(255,51,0); font-size: 24px">￥</span><span data-tid='{$plt.id}' class="price" data-p="{$plt.price}" placeholder="{$plt.price}" style="color: rgb(255,51,0); font-size: 32px">{$plt.price}</span>
+  							</div>
+  							<div style="height: 15px;" class="col-xs-12"></div>
+  							<div class="col-xs-8"><span style="color: rgb(255,51,0);">{$plt.str}</span></div>
+  							<div class="col-xs-4">
+  								<span style="color: rgb(255,109,12); font-size: 14px">￥</span><span style="color: rgb(255,109,12); font-size: 16px"><del class="oprice" data-p="{$plt.product_oprice}" data-tid='{$plt.id}'>{$plt.product_oprice}</del></span>
+  								<span style="color: rgb(255,109,12); font-size: 14px">门市价</span>
+  							</div>
+  							<div style="height: 15px;" class="col-xs-12"> </div>
+  							<div class="col-xs-8"><a href="{:U('StoreShopIndex/ProductArticle',array('id'=>$plt['id']))}"><button type="button" class="btn btn-info btn-sm" style="width:70%; font-size: 16px">商品详情</button></a></div>
+  							<div class="col-xs-4"><a href="{:U('StoreProductOrder/ProductOrder',array('id'=>$plt['id'],'tid'=>$sae['typeid']))}"><button type="botton" class="btn btn-warning btn-sm" style="font-size: 16px">立即预订</button></a></div>
+  						</div>
+  					</tr>
+  					<tr>
+  						<td></td>
+  						<td></td>
+  						<td></td>
+  						<td></td>
+  					</tr>
+  					<tr>
+  						<td></td>
+  						<td></td>
+  						<td></td>
+  						<td></td>
+  					</tr>
+  				</table>
+  			</div>
+		</volist>
+	</div>
+
+<!--cont-box2-->
+  <div class="cont-box" id="cont-box2">
+    <div class="row" style="margin: 0px ; padding: 20px; border-bottom: 1px solid #ccc;">
+      <div class="col-xs-12 h4">地址：{$sae.address}</div>
+      <div class="col-xs-12 h4">电话：{$sae.tel}</div>
+      <div style="margin-top: 50px; clear: both;"></div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-6"><button class="layui-btn layui-btn" style="width: 100%" type="button">查看地图</button></div>
+      <div class="col-xs-3"></div>
+      
+    </div>
+
+    <!-- 简介 -->
+    <div class="h4" style="margin: 20px; padding-left: 15px; border-left: 3px solid rgb(50,184,173)">{$sae.shopname}简介</div>
+
+    <div style="margin: 20px; padding-left: 15px;">
+      {$sae.business_about|htmlspecialchars_decode}
+    </div>
+  </div>
+  </block>
+</body>
+</html>

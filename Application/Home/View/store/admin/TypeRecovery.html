@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 惠民卡系统 - 订单列表</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="background-color: #fff; ">
+
+<div style="margin:0px 2%;">
+    <form id="form2" name="form2" method="post" action="{:U('TypeReset')}">
+        <table class="table table-bordered" width="96%" style="background:#fff;"  cellpadding="0">
+          <tr>
+            <td width="50" height="35" align="center" ><input type="checkbox" name="all" id="all" />
+            <label for="all"></label></td>
+            <td align="center" width="80px">编号ID</td>
+            <td align="center" width="80px" >分类图标</td>
+            <td align="center" >分类名</td>
+            <td align="center" >状态</td>
+            <td align="center" >权重</td>
+            <td align="center" >操作</td>
+          </tr>
+          <volist name='typelist' id='at' empty='$msg'>
+            <tr>
+              <td width="50" height="35" align="center" ><input type="checkbox" value="{$at.id}" class="select" name="select[]" id="select[]" /></td>
+              <td align="center">{$at.id}</td>
+              <td align="center" ><img style="width: 40px; height: 40px;" src="{$at.picurl|default='/PUBLIC/images/default.jpg'}"></td>
+              <td align="center" >{$at.typename}</td>
+              <td align="center" ><if condition='$at.status eq 1'>启用<else /><span style="color: red">停用</span></if></td>
+              <td align="center" width="80px" >
+                <input type="hidden" name="typeid[]" value="{$at.id}">
+                <input type="text" class="form-control" name="weight[]" value="{$at.weight}"></td>
+              <td width="200px" align="center" > - </td>
+            </tr>
+          </volist>
+        </table>
+        <div style="text-align: center;"></div>
+        <div style="text-align: center;">
+          <input ac='{:U("TypeDel")}' name="submitbtn" class="btn btn-primary btn-sub" onclick="return confirm('您确定要恢复选中的分类吗？')" value="恢复分类" type="submit" />
+        </div>
+    </form> 
+   
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

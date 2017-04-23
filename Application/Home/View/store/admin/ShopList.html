@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 惠民卡系统 - 商家列表</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sub').click(function(){
+      $("#form2").attr('action',$(this).attr('data-url'));
+      $('#form2').submit();
+    });
+  });
+</script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="background-color: #fff; ">
+
+
+
+<div style="margin:0px 2%;">
+    <form id="form2" name="form2" method="post" action="">
+      <ul>
+        <table class="table table-bordered" width="96%" style="background:#fff;"  cellpadding="0">
+          <tr>
+            <td width="50" height="35" align="center" ><input type="checkbox" name="all" id="all" />
+            <label for="all"></label></td>
+            <td align="center" >商家ID</td>
+            <td align="center" >所属分类</td>
+            <td align="center" >商家名</td>
+            <td align="center" >状态</td>
+            <td align="center" >商家地址</td>
+            <td align="center" >操作</td>
+          </tr>
+          <volist name='spt' id='at'>
+            <tr>
+              <td width="50" height="35" align="center" ><input type="checkbox" value="{$at.id}" class="select" name="select[]" id="select[]" /></td>
+              <td align="center">{$at.id}</td>
+              <td align="center" >{$at.typename}</td>
+              <td align="center" >{$at.shopname}</td>
+              <td align="center" ><if condition='$at["status"] eq 1'><span style="color: green">启用</span><else /><span style="color: red">停用</span></if></td>
+              <td align="center">{$at.address}</td>
+              <td width="200px" align="center" > 
+              <a href="{:U('ShopEdit',array('id'=>$at['id']))}"><button class="btn btn-default" type="button"><i alt='编辑' title='编辑' class="glyphicon glyphicon-pencil "></i>编辑</button></a>
+               </td>
+            </tr>
+          </volist>
+        </table>
+        <div style="text-align: center;"></div>
+        <div style="text-align: center;">
+          <a href="{:U('ShopAdd')}"><input  name="submitbtn" class="btn btn-primary" value="添加商家" type="button" /></a> - <input  name="submitbtn" data-url="{:U('ShopSaveStatus',array('sta'=>1))}" class="btn btn-primary sub" value="启用商家" type="submit" /> - <input  name="submitbtn" data-url="{:U('ShopSaveStatus',array('sta'=>0))}" class="btn btn-primary sub" value="禁用商家" type="submit" /> -
+          <input  name="submitbtn" class="btn btn-primary sub" onclick="return confirm('您确定要删除选中的规格吗？')" value="删除选中" type="submit" data-url="ShopDel" />
+          <span class="fonts">（请谨慎删除，删除后不可恢复）</span>
+        </div>
+      </ul>
+    </form> 
+   
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>

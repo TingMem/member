@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title><block name="title">商城列表</block></title>
+	<link rel="stylesheet" href="__PUBLIC__/adminlte/bootstrap/css/bootstrap.min.css">
+	<load type="css" file="__PUBLIC__/Css/store.css" />
+	<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+	<load type="js" file="__PUBLIC__/bootstrap/js/bootstrap.min.js" />
+	<load type="css" file="__PUBLIC__/layui/css/layui.css" />
+  	<load type="js" file="__PUBLIC__/layui/lay/dest/layui.all.js" />
+</head>
+<body>
+	<!-- Search Start -->
+	<div class="container-fulid">
+		<div class="row search-bg" style="margin: 0px">
+			<div class="col-xs-2 search-title"><block name="search">全部</block></div>
+			<div class="col-xs-8">
+			    <div class="input-group">
+			      <input type="text" class="form-control">
+			      <span class="input-group-addon search-btn">
+			        <span class="glyphicon glyphicon-search" style="font-size: 16px"></span>
+			      </span>
+			    </div>
+			</div>
+			<div class="col-xs-2"><span class="glyphicon glyphicon-shopping-cart" style="font-size: 24px; color: #fff; cursor: pointer;"></span></div>
+		</div>
+	</div>
+	<!-- //Search Start -->
+
+
+<!-- Index AD Start -->
+	<block name="ad">
+		<div class="container-fulid" style="margin: 5px 0px; border-top:1px #ccc solid;border-bottom:1px #ccc solid;">
+			<div class="index-ad">AD1</div>
+			<div class="index-ad">AD2</div>
+			<div style="clear: both;"></div>
+		</div>
+	</block>
+<!-- Index AD End -->
+
+<!-- ShopList Start -->
+	<block name="content">
+
+	</block>
+	<block name="nav">
+		<include file="index:footer"/>
+	</block>
+<!-- ShopList End -->
+</body>
+</html>

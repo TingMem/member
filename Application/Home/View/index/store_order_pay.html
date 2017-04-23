@@ -1,0 +1,63 @@
+  <extend name="html:inc_product" />
+  <block name="title">订单确认</block>
+  <block name="top">订单确认</block>
+  <block name='player'></block>
+  <block name="content">
+
+    <form name="form" class="layui-form form" action="#" method="post">
+    	<div class="">
+    		<table name='tab' width="100%" style="text-align: center;">
+    			<tr>
+    				<td><div style="height: 30px;">
+              <div class="row" style="margin: 0px;">
+                <div class="col-xs-12">
+                  <h4 class="h4" style="font-weight: 600; text-align: left; padding: 0 0 0 5%;">{$order.product_name} *{$order['num']}</h4>
+                </div>
+              </div>
+            </div></td>
+    			</tr>
+    		</table>
+    	</div>
+
+  
+      <div class="row" style="margin: 0px;padding: 15px 5%;">
+        <div class="col-xs-12">购买数量 {$order['num']}</div>
+      </div>
+
+    <h4 class="h4" style="font-weight: 600; text-align: left; padding: 0 0 0 10%;">规格(已选购)</h4>
+  <!-- 规格选择 -->
+      <div class="col-xs-12" style="padding:0  10% 3%; z-index: 10; width: 100%">
+        {$order.spec}
+      </div>
+  <!-- //规格选择 -->
+    
+      <h4 class="h4" style="font-weight: 600; text-align: left; padding: 0 0 0 10%; clear: both;">说明(含)</h4>
+
+    <!--cont-box2-->
+      <div class="cont-box" id="cont-box2">
+        <div class="row" style="margin: 0px ; padding: 5px 5%; border-bottom: 1px solid #ccc;">
+            <div class="col-xs-6">
+              {$order.attr_value}
+            </div>
+        </div>
+
+
+        <div style="margin: 20px; padding-left: 15px;">
+
+        </div>
+      </div>
+
+      <div class="row" style="margin: 0px;">
+     
+        <table class="table table-bordered">
+          <tr>
+            <td style="width: 50%; text-align: center;">
+              <span style="color: rgb(255,51,0); font-size: 16px">付款金额 ￥</span><span class="price" style="color: rgb(255,51,0); font-size: 24px">{$order.total_price}</span>
+            </td>
+            <td style="text-align: center;"><button type="submit" class='layui-btn layui-btn-warm layui-btn-radius layui-btn-big'>确认并付款</button></td>
+          </tr>
+        </table>
+      
+      </div>
+    </form>
+  </block>

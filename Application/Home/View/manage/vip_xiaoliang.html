@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			钦州旅游 - 惠民卡管理系统
+		</title>
+
+	</head>
+	<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+    
+    
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="all" href="__PUBLIC__/dateselect/daterangepicker-bs3.css"/>
+<script type="text/javascript" src="__PUBLIC__/dateselect/moment.js"></script>
+<script type="text/javascript" src="__PUBLIC__/dateselect/daterangepicker.js"></script>
+      <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+
+		<div class="container" style="margin-top:0px;">
+         <div class="span12">
+
+            <div class="well">
+
+               <form class="form-horizontal" method="post" action="" name="form1">
+                 <fieldset>
+                  <div class="control-group">
+                    <div class="controls">
+                     <div class="input-prepend input-group">
+                       <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span><input type="text" readonly style="width: 200px" name="date" id="reservation" class="form-control" value="{$date}" />
+                        <input type="submit" class="btn btn-primary" value="查询" />
+                       
+                     </div>
+                    </div>
+                   
+                  </div>
+                 </fieldset>
+               </form>
+
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#reservation').daterangepicker(null, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+
+            </div>
+
+
+         </div>
+      </div>
+	
+      <div class="container">
+   	    <div style="padding:35px; border:1px solid #ccc ; background:#fff;">
+          	<h3>一、当前发售卡统计 - 统计时间：<?php echo date('Y年m月d日',time())?>  —— 统计范围：{$title}</h3>
+       	  <h4>录入总数：共[<span style="color:red;">{$vip.count}</span>]张  当前已发售[<span style="color:red;">{$vip.locks}</span>]张  剩余：[<span style="color:red;">{$vip.ok|default='0'}</span>]张 实体卡:[<span style="color:red;">{$vip.stk}</span>]张，电子卡[<span style="color:red;">{$vip.internet}</span>]张<br>
+       	  </h4>
+          <table class="table table-bordered h4" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr class="info">
+                    <td width="33%" height="35" align="center"><h3>卡片类别</h3></td>
+                    <td width="33%" align="center"><h3>卡片数量</h3></td>
+                    <td width="33%" align="center"><h3>总计</h3></td>
+                  </tr>
+                  <tr>
+                    <td height="35" align="center">实体卡</td>
+                    <td align="center"><span style="color:red;">{$maxsum2-$internet}张</span></td>
+                    <td rowspan="2" align="center"><span style="color:red;">{$maxsum2}张</span></td>
+                  </tr>
+                  <tr>
+                    <td height="35" align="center">电子卡</td>
+                    <td align="center"><span style="color:red;">{$internet}张</span></td>
+                  </tr>
+                </table>
+          	<h3>
+          	  二、惠民卡消费统计 - 统计时间：<?php echo date('Y年m月d日',time())?>  —— 统计范围：{$msg}
+            </h3>
+          <table class="table table-bordered h4" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr class="info">
+                <td width="33%" height="35" align="center"><h3>景区</h3></td>
+                <td width="33%" align="center"><h3>消费次数</h3></td>
+                <td width="33%" align="center"><h3>占比</h3></td>
+              </tr>
+           <volist id='tongji' name='tongji' empty='暂无数据'>
+              <tr>
+                <td height="35" align="center"><span style="color:red;">{$tongji.shopname}</span></td>
+                <td align="center"><span style="color:red;">{$tongji.gnum}</span>次</td>
+                <td align="center"><span style="color:red;">{:round(($tongji['gnum']/($count/100)),2)}</span>%</td>
+              </tr>
+           </volist>
+              <tr>
+                <td height="35" align="center">总计</td>
+                <td colspan="2" align="center"><span style="color:red;">{$count}</span>次</td>
+              </tr>
+              <tr>
+              	<td colspan="3" align="right" height="100"><span style="font-size:14px;">数据分析：钦州旅游网</span></td>
+              </tr>
+          </table>
+   	    </div>
+            
+          <div style="padding:35px; border:1px solid #ccc ; background:#fff;">
+          <h3>{$title}</h3>
+          <div class="btn btn-default" style="margin:10px;">共计：{$maxsum2}张</div>
+          <volist name='nw' id='nw' empty='暂无录入'>
+              <div class="btn btn-primary" aid="{$nw['username']}" style="margin:10px;">{$nw.usercname}({$nw.v})</div>
+          </volist> 
+          </div>
+        
+        
+           
+      </div>
+      
+      <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>    
+	
+	</body>
+</html>

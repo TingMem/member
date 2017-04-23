@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>钦州旅游网 - 惠民卡系统 - 规格编辑</title>
+<load type="css" file="__PUBLIC__/Css/base.css" />
+<load type="js" file="__PUBLIC__/Js/jquery.min.js" />
+<load type="js" file="__PUBLIC__/Js/select.js" />
+<style type="text/css">
+.fonts {
+	font-size: 12px;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $("#submit").click(function(){
+
+      if($('#type_name').val()==''){
+        alert('请输入分类名');
+        $("#type_name").focus();
+        return false;
+      }
+    })
+
+  });
+</script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <include file="manage/head" />
+      <!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="background-color: #fff; ">
+
+<div style="margin:0px 2%;">
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <form class="form-horizontal" enctype="multipart/form-data" role="form" id="form1" name="form1" method="post" action="{:U('TypeEdit')}">
+          <div class="form-group">
+            <label for="typename" class="col-sm-2 control-label">分类名</label>
+            <div class="col-sm-3">
+              <input name="editid" class="form-control" id="editid" value="{$tpe.id}" type="hidden" />
+              <input name="type_name" class="form-control" id="type_name" value="{$tpe.typename}" type="text" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="type" class="col-sm-2 control-label">分类图标</label>
+            <div class="col-sm-2" style="border: 0px;">
+              <input name="typepic"  id="typepic" type="file" />
+            </div>
+            <p class="col-sm-2 text-danger"><img width="64px" height="64px;" src="{$tpe.picurl|default='/PUBLIC/images/default.jpg'}"/>最大200kb</p>
+          </div>
+          <div class="form-group">
+             <label for="type_status" class="col-sm-2 control-label">立即启用</label>
+            <div class="col-sm-2">
+              <select name="type_status" id="type_status" class="form-control">
+              <option <if condition='$tpe["status"] eq 1'>selected</if> value="1">是</option>
+                <option <if condition='$tpe["status"] eq 0'>selected</if> value="0">否</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="weight" class="col-sm-2 control-label">权重（排序）</label>
+            <div class="col-sm-1">
+              <input name="weight" class="form-control" id="weight" value="{$tpe.weight}" type="text" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+               <button type="submit" id="submit" class="btn btn-primary">保 存</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /.content -->
+	</div>
+  <!-- /.content-wrapper -->
+    <include file="manage/foot" />
+</div>
+</body>
+</html>
